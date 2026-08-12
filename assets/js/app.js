@@ -135,6 +135,27 @@
     return isNaN(n) ? 0 : Math.max(0, Math.min(kase.pieces.length - 1, n));
   }
 
+  /* ── View mode ────────────────────────────────────────────────────────── */
+
+  /* A phone can ask for the wide layout the same way a browser's own "Request
+     desktop site" does it: widen the viewport and let the existing media
+     queries do the rest. Desktop browsers ignore the viewport tag entirely, so
+     the control is only offered where pressing it would change something. */
+
+  var VIEWPORT = {
+    auto: 'width=device-width, initial-scale=1, viewport-fit=cover',
+    desktop: 'width=1280'
+  };
+
+  function canSwitchView() {
+    return !!(global.matchMedia && global.matchMedia('(pointer: coarse)').matches);
+  }
+
+  function applyView() {
+    var tag = document.querySelector('meta[name="viewport"]');
+    if (tag) tag.setAttribute('content', VIEWPORT[Store.getView()] || VIEWPORT.auto);
+  }
+
   /* ── Chrome ───────────────────────────────────────────────────────────── */
 
   function paintChrome(route) {
@@ -148,6 +169,16 @@
     document.querySelectorAll('[data-route]').forEach(function (link) {
       link.classList.toggle('on', link.getAttribute('data-route') === route);
     });
+
+    var vs = document.querySelector('[data-viewswitch]');
+    if (vs) {
+      var wide = Store.getView() === 'desktop';
+      vs.hidden = !canSwitchView();
+      vs.classList.toggle('on', wide);
+      // The label names the layout you would move to, not the one you are in.
+      vs.textContent = t(wide ? 'viewMobile' : 'viewDesktop');
+      vs.setAttribute('aria-label', t(wide ? 'viewMobileAria' : 'viewDesktopAria'));
+    }
   }
 
   /* ── Screen: index ────────────────────────────────────────────────────── */
@@ -1024,6 +1055,17 @@
       render();
     });
   });
+
+  var viewBtn = document.querySelector('[data-viewswitch]');
+  if (viewBtn) {
+    viewBtn.addEventListener('click', function () {
+      Store.setView(Store.getView() === 'desktop' ? 'auto' : 'desktop');
+      applyView();
+      render();
+    });
+  }
+
+  applyView();   // a choice made last visit is restored before the first paint
 
   window.addEventListener('hashchange', function () {
     render();

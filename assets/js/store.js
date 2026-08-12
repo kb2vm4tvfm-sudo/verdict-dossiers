@@ -6,7 +6,7 @@
   var KEY = 'verdict60.v1';
 
   function blank() {
-    return { lang: null, followed: false, cases: {} };
+    return { lang: null, view: null, followed: false, cases: {} };
   }
 
   var memory = null;          // fallback when localStorage is unavailable
@@ -60,6 +60,11 @@
 
     getLang: function () { return read().lang; },
     setLang: function (lang) { var s = read(); s.lang = lang; write(s); },
+
+    /* 'auto' follows the device; 'desktop' is a phone asking for the wide
+       layout. Null means never chosen, which behaves as 'auto'. */
+    getView: function () { return read().view === 'desktop' ? 'desktop' : 'auto'; },
+    setView: function (view) { var s = read(); s.view = view; write(s); },
 
     hasFollowed: function () { return read().followed === true; },
     setFollowed: function () { var s = read(); s.followed = true; write(s); },

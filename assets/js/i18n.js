@@ -11,6 +11,11 @@
       footerNote: 'Free case dossiers · no account, no payment ·',
       disclaimer: 'Constructed cases are works of fiction. Names, characters, businesses and events are invented, the photographs are AI-generated, and any resemblance to real persons, living or dead, is coincidental.',
 
+      viewDesktop: 'Desktop view',
+      viewMobile: 'Mobile view',
+      viewDesktopAria: 'Switch to the desktop layout',
+      viewMobileAria: 'Switch back to the mobile layout',
+
       indexEyebrow: 'Free case dossiers · play in your browser',
       indexTitle: 'Sixty seconds is the trailer. This is the file.',
       indexIntro: 'Every dossier is the full working file behind a case from the feed: the report, the scene, the forensics, the phone records. Read it, name a suspect, get the answer on the spot.',
@@ -116,6 +121,11 @@
       navHow: 'Hoe werkt het',
       footerNote: 'Gratis dossiers · geen account, geen betaling ·',
       disclaimer: 'Geconstrueerde zaken zijn fictie. Namen, personages, bedrijven en gebeurtenissen zijn verzonnen, de foto\'s zijn door AI gegenereerd, en elke gelijkenis met bestaande personen, levend of overleden, berust op toeval.',
+
+      viewDesktop: 'Desktopweergave',
+      viewMobile: 'Mobiele weergave',
+      viewDesktopAria: 'Overschakelen naar de desktopweergave',
+      viewMobileAria: 'Terug naar de mobiele weergave',
 
       indexEyebrow: 'Gratis dossiers · direct in je browser',
       indexTitle: 'Zestig seconden is de trailer. Dit is het dossier.',

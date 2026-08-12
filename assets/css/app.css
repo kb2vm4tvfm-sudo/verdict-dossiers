@@ -97,10 +97,10 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; margin: 0; 
   text-transform: uppercase; color: var(--dim-3); margin-left: 6px;
 }
 
-.topnav { display: flex; align-items: center; gap: 22px; }
+.topnav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; justify-content: flex-end; }
 .topnav > a {
   font-family: var(--mono); font-size: 11px; letter-spacing: .2em;
-  text-transform: uppercase; color: var(--dim-2);
+  text-transform: uppercase; color: var(--dim-2); white-space: nowrap;
 }
 .topnav > a:hover, .topnav > a.on { color: var(--ink); }
 
@@ -110,6 +110,15 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; margin: 0; 
   padding: 7px 12px; color: var(--dim-2);
 }
 .langswitch button.on { background: var(--crimson); color: var(--ink); }
+
+.viewswitch {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .16em;
+  text-transform: uppercase; padding: 7px 12px;
+  border: 1px solid var(--line-strong); color: var(--dim-2); white-space: nowrap;
+}
+.viewswitch:hover { border-color: var(--ink); color: var(--ink); }
+.viewswitch.on { border-color: var(--crimson); color: var(--ink); }
+.viewswitch[hidden] { display: none; }
 
 /* ── Index ───────────────────────────────────────────────────────────────── */
 
@@ -532,6 +541,9 @@ mark { background: rgba(146, 8, 5, .5); color: var(--ink); }
 @media (max-width: 900px) {
   :root { --pad: 22px; }
   .topbar { flex-wrap: wrap; gap: 12px; padding: 14px var(--pad); }
+  /* Four controls will not sit on one phone-width row; let them wrap rather
+     than squeezing "How it works" into a column of single words. */
+  .topnav { gap: 12px 16px; }
   .brand-sub { display: none; }
   .index-hero { grid-template-columns: 1fr; gap: 30px; align-items: start; }
   .facts { flex-direction: row; flex-wrap: wrap; gap: 26px; border-left: 0; border-top: 1px solid var(--line); padding: 22px 0 0; }
