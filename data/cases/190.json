@@ -1,0 +1,149 @@
+{
+  "keyArt": "assets/covers/190-keyart.jpg",
+  "stamp": { "en": "Wynhurst Gallery · 17 Mar · cold case", "nl": "Wynhurst Gallery · 17 mrt · koude zaak" },
+
+  "synopsis": {
+    "en": "At 1:24 a.m. on 17 March, two men in police uniforms talk their way into the Wynhurst Gallery, tell the night guard they are responding to a silent-alarm activation, and ask him to step away from the console. Eighty minutes later they leave with four paintings and the only recording of their faces. No arrest has ever been made. The gallery's insurance had lapsed six weeks earlier and was never renewed.",
+    "nl": "Om 1:24 uur in de nacht van 17 maart praten twee mannen in politie-uniform zich naar binnen bij de Wynhurst Gallery. Ze vertellen de nachtwaker dat ze reageren op een stille alarmmelding en vragen hem bij de console vandaan te komen. Tachtig minuten later vertrekken ze met vier schilderijen en de enige opname van hun gezichten. Er is nooit een aanhouding verricht. De verzekering van de galerie was zes weken eerder verlopen en niet verlengd."
+  },
+
+  "detailMeta": [
+    { "label": { "en": "Runtime", "nl": "Speelduur" }, "value": { "en": "45–60 minutes", "nl": "45–60 minuten" } },
+    { "label": { "en": "Players", "nl": "Spelers" }, "value": { "en": "1–4", "nl": "1–4" } },
+    { "label": { "en": "Documents", "nl": "Stukken" }, "value": { "en": "5", "nl": "5" } },
+    { "label": { "en": "Case status", "nl": "Status zaak" }, "value": { "en": "Cold case — unsolved", "nl": "Koude zaak — onopgelost" } }
+  ],
+
+  "suspects": [
+    {
+      "name": "T. Voss",
+      "role": { "en": "Night guard", "nl": "Nachtwaker" },
+      "note": { "en": "Let the two men in without calling it in first. Says he believed them.", "nl": "Liet de twee mannen binnen zonder eerst te verifiëren. Zegt dat hij hen geloofde." },
+      "photo": "assets/covers/190-suspect-1.jpg",
+      "cleared": {
+        "en": "He broke protocol admitting them without confirming over the line, and that is the whole of what he did wrong. The console log shows he tried the backup number twice within the first four minutes — a call the two men could not have known about when they left him zip-tied in the boiler room.",
+        "nl": "Hij overtrad het protocol door hen binnen te laten zonder verificatie, en dat is het enige wat hij fout deed. Het consolelogboek toont dat hij binnen vier minuten twee keer het reservenummer probeerde te bellen — iets waar de twee mannen niets van konden weten toen ze hem met tie-wraps achterlieten in de ketelruimte."
+      }
+    },
+    {
+      "name": "K. Reyes",
+      "role": { "en": "Second guard", "nl": "Tweede bewaker" },
+      "note": { "en": "Restrained in the basement for the full eighty minutes. Found by the morning shift.", "nl": "Tachtig minuten lang vastgebonden in de kelder. Gevonden door de ochtendploeg." },
+      "photo": "assets/covers/190-suspect-2.jpg",
+      "cleared": {
+        "en": "He was found exactly where the intruders left him, restrained with tape from the gallery's own supply closet — tape neither guard had reason to carry himself. Nothing about his position, his statement, or the timeline puts him anywhere near the console.",
+        "nl": "Hij werd precies gevonden waar de indringers hem achterlieten, vastgebonden met tape uit de eigen voorraadkast van de galerie — tape die geen van beide bewakers zelf bij zich had. Niets in zijn positie, verklaring of de tijdlijn plaatst hem in de buurt van de console."
+      }
+    },
+    {
+      "name": "D. Marchetti",
+      "role": { "en": "Former head of security", "nl": "Voormalig hoofd beveiliging" },
+      "note": { "en": "Dismissed eight months earlier for falsifying patrol logs. Knew the building's alarm layout better than anyone still on staff.", "nl": "Acht maanden eerder ontslagen wegens het vervalsen van surveillancelogs. Kende de alarmlay-out van het gebouw beter dan wie dan ook nog in dienst." },
+      "photo": "assets/covers/190-suspect-3.jpg"
+    },
+    {
+      "name": "A. Kessler",
+      "role": { "en": "Local dealer", "nl": "Lokale handelaar" },
+      "note": { "en": "Has handled unprovenanced pieces before. Contacted the gallery twice in the prior month.", "nl": "Handelde eerder in stukken zonder herkomst. Nam de maand ervoor twee keer contact op met de galerie." },
+      "photo": "assets/covers/190-suspect-4.jpg",
+      "cleared": {
+        "en": "He contacted the gallery to try to buy two of the pieces legitimately — the correspondence file has his written offer, declined a week before the break-in. Wanting to buy something openly is a strange way to plan taking it.",
+        "nl": "Hij nam contact op om twee stukken legitiem te kopen — het correspondentiedossier bevat zijn schriftelijke bod, een week voor de inbraak afgewezen. Iets openlijk willen kopen is een vreemde manier om het te plannen te stelen."
+      }
+    }
+  ],
+
+  "solution": {
+    "culprit": 2,
+    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen." },
+    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader." },
+    "correct": {
+      "en": "Marchetti. When he was dismissed, the gallery reissued every alarm code except one — a maintenance override on the side door that IT never found in the system, because it was never in the system, only in his old service logs. The override was used at 1:19 a.m., five minutes before the two men reached the front desk. A payphone two blocks from his apartment placed a forty-second call to the gallery's front desk at 1:11 a.m. — long enough to confirm which guard was on shift, short enough to hang up before anyone answered properly.",
+      "nl": "Marchetti. Toen hij werd ontslagen, gaf de galerie alle alarmcodes opnieuw uit, op één na — een onderhoudsoverride voor de zijdeur die IT nooit in het systeem vond, omdat hij nooit in het systeem stond, alleen in zijn oude servicelogs. De override werd om 1:19 uur gebruikt, vijf minuten voordat de twee mannen bij de balie kwamen. Een telefooncel twee straten van zijn appartement pleegde om 1:11 uur een gesprek van veertig seconden naar de balie van de galerie — lang genoeg om te bevestigen welke bewaker dienst had, kort genoeg om op te hangen voordat iemand echt opnam."
+    },
+    "wrong": {
+      "en": "Work back from the side door, not the front desk. Whoever timed the two men's approach knew the guard rotation and had a way into the building's systems that nobody currently on staff still had. Only one person on the wall fits both.",
+      "nl": "Redeneer terug vanaf de zijdeur, niet de balie. Wie de aankomst van de twee mannen timede, kende de dienstrooster en had een ingang tot de systemen van het gebouw die niemand die nog in dienst was nog had. Slechts één persoon aan de wand past bij beide."
+    }
+  },
+
+  "pieces": [
+    {
+      "num": "01",
+      "type": "report",
+      "label": { "en": "Police report", "nl": "Proces-verbaal" },
+      "desc": { "en": "First response, guard statements and the alarm printout.", "nl": "Eerste optreden, verklaringen van bewakers en het alarmuitdraai." },
+      "blocks": [
+        {
+          "head": { "en": "Incident", "nl": "Melding" },
+          "text": { "en": "At 1:24 a.m. two men in police uniforms request entry at the Wynhurst Gallery's front desk, telling the night guard they are responding to a silent-alarm activation. He admits them without confirming through dispatch.", "nl": "Om 1:24 uur vragen twee mannen in politie-uniform toegang bij de balie van de Wynhurst Gallery en vertellen de nachtwaker dat ze reageren op een stille alarmmelding. Hij laat hen binnen zonder verificatie via de meldkamer." }
+        },
+        {
+          "head": { "en": "Restraint", "nl": "Vastbinden" },
+          "text": { "en": "The men separate the two guards, restrain both with tape from the gallery's supply closet, and lead the primary guard to the basement boiler room.", "nl": "De mannen scheiden de twee bewakers, binden beiden vast met tape uit de voorraadkast van de galerie, en leiden de hoofdbewaker naar de ketelruimte in de kelder." }
+        },
+        {
+          "head": { "en": "Theft", "nl": "Diefstal" },
+          "text": { "en": "Over the next eighty minutes the men remove four paintings from the east gallery, cutting two from their frames. The frames are left on the floor.", "nl": "In de daaropvolgende tachtig minuten halen de mannen vier schilderijen uit de oostvleugel, waarvan twee uit hun lijst gesneden. De lijsten blijven op de vloer liggen." }
+        },
+        {
+          "head": { "en": "Discovery", "nl": "Ontdekking" },
+          "text": { "en": "The morning shift finds both guards restrained at 8:02 a.m. Neither guard is otherwise harmed.", "nl": "De ochtendploeg vindt beide bewakers om 8:02 uur vastgebonden. Geen van beiden raakte verder gewond." }
+        },
+        {
+          "head": { "en": "Status", "nl": "Status" },
+          "text": { "en": "No arrest has been made. The gallery's insurance policy had lapsed six weeks earlier and was not renewed at the time of the theft.", "nl": "Er is geen aanhouding verricht. De verzekeringspolis van de galerie was zes weken eerder verlopen en op het moment van de diefstal niet verlengd." }
+        }
+      ],
+      "attachments": [
+        { "title": { "en": "Front desk sign-in log", "nl": "Bezoekerslogboek balie" }, "meta": { "en": "Copy · incomplete", "nl": "Kopie · onvolledig" } },
+        { "title": { "en": "Alarm system printout", "nl": "Alarmsysteem-uitdraai" }, "meta": { "en": "Night of 17 March", "nl": "Nacht van 17 maart" } },
+        { "title": { "en": "Insurance correspondence", "nl": "Verzekeringscorrespondentie" }, "meta": { "en": "Lapsed policy, dated", "nl": "Verlopen polis, gedateerd" } }
+      ]
+    },
+    {
+      "num": "02",
+      "type": "scene",
+      "label": { "en": "Scene floor plan", "nl": "Plattegrond plaats delict" },
+      "desc": { "en": "Front desk, east gallery and the two points where the guards were found.", "nl": "Balie, oostvleugel en de twee plekken waar de bewakers werden gevonden." },
+      "image": "assets/covers/190-scene.jpg",
+      "pins": [
+        { "pin": "A", "text": { "en": "Front desk — where the two men were admitted, 1:24 a.m.", "nl": "Balie — waar de twee mannen werden toegelaten, 1:24 uur." } },
+        { "pin": "B", "text": { "en": "East gallery — four works removed, two frames left on the floor.", "nl": "Oostvleugel — vier werken verwijderd, twee lijsten op de vloer." } },
+        { "pin": "C", "text": { "en": "Boiler room — T. Voss found restrained, 8:02 a.m.", "nl": "Ketelruimte — T. Voss vastgebonden aangetroffen, 8:02 uur." } },
+        { "pin": "D", "text": { "en": "Basement corridor — K. Reyes found restrained, 8:02 a.m.", "nl": "Kelder­gang — K. Reyes vastgebonden aangetroffen, 8:02 uur." } },
+        { "pin": "E", "text": { "en": "Side door — accessed with a maintenance override at 1:19 a.m., five minutes before the front desk.", "nl": "Zijdeur — geopend met een onderhoudsoverride om 1:19 uur, vijf minuten voor de balie." } }
+      ]
+    },
+    {
+      "num": "03",
+      "type": "forensics",
+      "label": { "en": "Forensic report", "nl": "Forensisch rapport" },
+      "desc": { "en": "System audit, restraint materials and telecom records.", "nl": "Systeemaudit, vastbindmateriaal en telecomgegevens." },
+      "rows": [
+        { "ref": "FR-01", "finding": { "en": "Side door override used at 1:19 a.m. matches a maintenance code retired from staff records but never removed from the panel's service log.", "nl": "Zijdeur-override om 1:19 uur komt overeen met een onderhoudscode die uit het personeelsbestand was verwijderd, maar nooit uit het servicelog van het paneel." }, "method": { "en": "System audit", "nl": "Systeemaudit" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-02", "finding": { "en": "Restraint tape matches the gallery's own supply closet stock.", "nl": "Vastbindtape komt overeen met de eigen voorraad van de galerie." }, "method": { "en": "Material comparison", "nl": "Materiaalvergelijking" }, "status": { "en": "Indicative", "nl": "Indicatief" } },
+        { "ref": "FR-03", "finding": { "en": "Payphone two blocks from D. Marchetti's registered address placed a 40-second call to the front desk at 1:11 a.m.", "nl": "Telefooncel twee straten van het geregistreerde adres van D. Marchetti pleegde om 1:11 uur een gesprek van 40 seconden naar de balie." }, "method": { "en": "Telecom records", "nl": "Telecomgegevens" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-04", "finding": { "en": "No fingerprints recovered from either frame; smear pattern indicates gloves.", "nl": "Geen vingerafdrukken op de lijsten aangetroffen; veegpatroon wijst op handschoenen." }, "method": { "en": "Dactyloscopy", "nl": "Dactyloscopie" }, "status": { "en": "Negative", "nl": "Negatief" } },
+        { "ref": "FR-05", "finding": { "en": "Front desk camera disabled at 1:18 a.m., one minute before the side door override.", "nl": "Baliecamera uitgeschakeld om 1:18 uur, één minuut voor de override van de zijdeur." }, "method": { "en": "System audit", "nl": "Systeemaudit" }, "status": { "en": "Indicative", "nl": "Indicatief" } }
+      ]
+    },
+    {
+      "num": "04",
+      "type": "suspects",
+      "label": { "en": "Suspect wall", "nl": "Verdachtenwand" },
+      "desc": { "en": "Four people who were near the gallery, its codes, or its collection.", "nl": "Vier mensen die dicht bij de galerie, haar codes of haar collectie stonden." }
+    },
+    {
+      "num": "05",
+      "type": "notepad",
+      "label": { "en": "Your notepad", "nl": "Notitieblok" },
+      "desc": { "en": "Write it down. What you flag stays with the file.", "nl": "Schrijf het op. Wat je markeert blijft bij het dossier." },
+      "pinned": [
+        { "tag": { "en": "Timing", "nl": "Tijdstip" }, "text": { "en": "Side door opened at 1:19 a.m. Front desk camera cut at 1:18. Two men arrived at 1:24.", "nl": "Zijdeur geopend om 1:19 uur. Baliecamera uitgevallen om 1:18. Twee mannen kwamen aan om 1:24." } },
+        { "tag": { "en": "Contradiction", "nl": "Tegenstrijdig" }, "text": { "en": "Kessler asked about insurance to buy in, not to plan a theft — his offer is on file, declined.", "nl": "Kessler vroeg naar de verzekering om te kopen, niet om te stelen — zijn bod staat in het dossier, afgewezen." } },
+        { "tag": { "en": "Open", "nl": "Open" }, "text": { "en": "Who else had access to the retired maintenance code besides the person who used it?", "nl": "Wie had nog meer toegang tot de verwijderde onderhoudscode buiten degene die hem gebruikte?" } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+
+# Full mugshot sheets the suspect portraits are cropped from. Kept locally so a
+# portrait can be recut, never deployed — one sheet carries placard names that
+# do not match the case file.
+_source/

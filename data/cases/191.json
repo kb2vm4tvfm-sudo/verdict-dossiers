@@ -1,0 +1,149 @@
+{
+  "keyArt": "assets/covers/191-keyart.jpg",
+  "stamp": { "en": "Corrin Vaults · 22 Apr · charged", "nl": "Corrin Vaults · 22 apr · vervolgd" },
+
+  "synopsis": {
+    "en": "Over the Easter bank holiday, someone drills through eighteen inches of concrete from a shared service shaft into the vault of Corrin Safe Deposit, working undisturbed for two nights running. Seventy-three boxes are forced open; the vault company's own inventory of who held what is incomplete for eleven of them. The alarm rang twice that weekend. Nobody came.",
+    "nl": "Tijdens het paasweekend boort iemand vanuit een gedeelde technische schacht door vijfenveertig centimeter beton de kluis van Corrin Safe Deposit binnen en werkt twee nachten achter elkaar ongestoord door. Drieënzeventig kluisjes worden opengebroken; de eigen administratie van het kluisbedrijf over wie welk kluisje had is voor elf ervan onvolledig. Het alarm ging dat weekend twee keer af. Er kwam niemand."
+  },
+
+  "detailMeta": [
+    { "label": { "en": "Runtime", "nl": "Speelduur" }, "value": { "en": "60–75 minutes", "nl": "60–75 minuten" } },
+    { "label": { "en": "Players", "nl": "Spelers" }, "value": { "en": "1–4", "nl": "1–4" } },
+    { "label": { "en": "Documents", "nl": "Stukken" }, "value": { "en": "5", "nl": "5" } },
+    { "label": { "en": "Case status", "nl": "Status zaak" }, "value": { "en": "Charged — three in custody, one at large", "nl": "Vervolgd — drie aangehouden, één voortvluchtig" } }
+  ],
+
+  "suspects": [
+    {
+      "name": "B. Colfax",
+      "role": { "en": "Retired locksmith", "nl": "Gepensioneerd slotenmaker" },
+      "note": { "en": "Ran a security-supply business until it closed in 2019. Sold drill bits of the exact bore size used at the scene.", "nl": "Runde een beveiligingsgroothandel tot de sluiting in 2019. Verkocht boren van exact het boortype dat op de plaats delict is gebruikt." },
+      "photo": "assets/covers/191-suspect-1.jpg"
+    },
+    {
+      "name": "E. Munro",
+      "role": { "en": "Delivery driver", "nl": "Bezorger" },
+      "note": { "en": "Van logged on service-road cameras both nights, 23:40.", "nl": "Bestelbus vastgelegd op camera's aan de servicestraat beide nachten, 23:40 uur." },
+      "photo": "assets/covers/191-suspect-2.jpg",
+      "cleared": {
+        "en": "The van was on the service road both nights, and there is a signed, timestamped delivery receipt for both — a florist's standing order for the hotel two doors down. Wrong van, right street.",
+        "nl": "De bestelbus stond beide nachten aan de servicestraat, en er is voor beide nachten een getekende, getijdstempelde afleverbon — een vaste bloemistenbestelling voor het hotel twee deuren verder. Verkeerde bus, juiste straat."
+      }
+    },
+    {
+      "name": "R. Talbot",
+      "role": { "en": "Alarm engineer", "nl": "Alarmtechnicus" },
+      "note": { "en": "Serviced the vault's alarm panel nine days earlier. Filed a fault report on the sensors the week before the break-in.", "nl": "Onderhield het alarmpaneel van de kluis negen dagen eerder. Meldde een storing aan de sensoren de week voor de inbraak." },
+      "photo": "assets/covers/191-suspect-3.jpg",
+      "cleared": {
+        "en": "He filed the fault report in writing, through his own company's system, four days before the break-in — and his supervisor read it and closed it without a callout. He tried to get someone to look at the panel. Nobody did.",
+        "nl": "Hij meldde de storing schriftelijk, via het systeem van zijn eigen bedrijf, vier dagen voor de inbraak — en zijn leidinggevende las het en sloot het af zonder iemand te sturen. Hij probeerde iemand naar het paneel te laten kijken. Niemand deed dat."
+      }
+    },
+    {
+      "name": "V. Okafor",
+      "role": { "en": "Box holder", "nl": "Kluishouder" },
+      "note": { "en": "Reported missing items her insurer disputed. Her claimed contents didn't match the vault company's own inventory.", "nl": "Meldde vermiste inhoud waar haar verzekeraar tegen inging. Haar opgegeven inhoud kwam niet overeen met de eigen administratie van het kluisbedrijf." },
+      "photo": "assets/covers/191-suspect-4.jpg",
+      "cleared": {
+        "en": "The mismatch is the vault company's error, not hers — their own intake ledger has her box logged under the wrong number since 2021, a clerical mistake three other customers share. It has nothing to do with the break-in.",
+        "nl": "De discrepantie is een fout van het kluisbedrijf, niet van haar — hun eigen intakeregister heeft haar kluisje sinds 2021 onder het verkeerde nummer staan, een administratieve fout die drie andere klanten ook treft. Het heeft niets met de inbraak te maken."
+      }
+    }
+  ],
+
+  "solution": {
+    "culprit": 0,
+    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen." },
+    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader." },
+    "correct": {
+      "en": "Colfax. The drill bore recovered from the wall matches a batch his supply business sold to exactly one buyer before closing in 2019 — himself. A coffee cup left in the service shaft carries his DNA, and automatic plate recognition logs his car on the access road both nights, arriving after the last resident car left and gone before the first one returned. He knew the vault's construction because his old firm fitted the original door.",
+      "nl": "Colfax. De teruggevonden boorkern uit de muur komt overeen met een partij die zijn groothandel vóór de sluiting in 2019 aan precies één koper verkocht — hemzelf. Een koffiebeker in de technische schacht draagt zijn DNA, en kentekenherkenning registreert zijn auto beide nachten op de toegangsweg, aankomend nadat de laatste bewonersauto vertrokken was en verdwenen voordat de eerste terugkeerde. Hij kende de constructie van de kluis omdat zijn oude bedrijf de originele deur plaatste."
+    },
+    "wrong": {
+      "en": "Whoever did this needed to know the wall's construction, not just the alarm or the driveway. Read the forensic report again — the drill bore is the one piece of physical evidence that only fits a single person's history.",
+      "nl": "Wie dit deed, moest de constructie van de muur kennen, niet alleen het alarm of de oprit. Lees het forensisch rapport opnieuw — de boorkern is het enige fysieke bewijs dat alleen bij de geschiedenis van één persoon past."
+    }
+  },
+
+  "pieces": [
+    {
+      "num": "01",
+      "type": "report",
+      "label": { "en": "Police report", "nl": "Proces-verbaal" },
+      "desc": { "en": "Discovery, access route and the incomplete box-holder ledger.", "nl": "Ontdekking, toegangsroute en het onvolledige kluishoudersregister." },
+      "blocks": [
+        {
+          "head": { "en": "Incident", "nl": "Melding" },
+          "text": { "en": "The vault manager opens Corrin Safe Deposit on the Tuesday after the Easter weekend to find the service-shaft wall breached and seventy-three boxes forced open.", "nl": "De kluisbeheerder opent Corrin Safe Deposit op de dinsdag na het paasweekend en treft de muur van de technische schacht doorbroken aan, met drieënzeventig opengebroken kluisjes." }
+        },
+        {
+          "head": { "en": "Access", "nl": "Toegang" },
+          "text": { "en": "The service shaft is shared with two neighbouring buildings and is not covered by the vault's own camera system.", "nl": "De technische schacht wordt gedeeld met twee naburige gebouwen en valt niet onder het eigen camerasysteem van de kluis." }
+        },
+        {
+          "head": { "en": "Alarm", "nl": "Alarm" },
+          "text": { "en": "The vault's alarm activated twice over the weekend, at 23:52 on Saturday and 00:14 on Sunday. Both activations were logged and neither was followed up.", "nl": "Het alarm van de kluis ging dat weekend twee keer af, om 23:52 uur op zaterdag en 00:14 uur op zondag. Beide meldingen werden gelogd en geen van beide opgevolgd." }
+        },
+        {
+          "head": { "en": "Inventory", "nl": "Administratie" },
+          "text": { "en": "The vault company's box-holder records are incomplete for eleven of the affected boxes; several holders cannot be immediately identified.", "nl": "De kluishoudersadministratie is voor elf van de getroffen kluisjes onvolledig; meerdere houders kunnen niet direct worden geïdentificeerd." }
+        },
+        {
+          "head": { "en": "Status", "nl": "Status" },
+          "text": { "en": "Three individuals have been charged. A fourth remains at large.", "nl": "Drie personen zijn vervolgd. Een vierde is voortvluchtig." }
+        }
+      ],
+      "attachments": [
+        { "title": { "en": "Service shaft access log", "nl": "Toegangslog technische schacht" }, "meta": { "en": "Shared building, incomplete", "nl": "Gedeeld gebouw, onvolledig" } },
+        { "title": { "en": "Alarm activation printout", "nl": "Alarmuitdraai" }, "meta": { "en": "Weekend of the break-in", "nl": "Weekend van de inbraak" } },
+        { "title": { "en": "Vault box-holder ledger", "nl": "Kluishoudersregister" }, "meta": { "en": "11 records incomplete", "nl": "11 registraties onvolledig" } }
+      ]
+    },
+    {
+      "num": "02",
+      "type": "scene",
+      "label": { "en": "Scene floor plan", "nl": "Plattegrond plaats delict" },
+      "desc": { "en": "Service shaft, vault wall and the only vehicle route to the site.", "nl": "Technische schacht, kluismuur en de enige voertuigroute naar de locatie." },
+      "image": "assets/covers/191-scene.jpg",
+      "pins": [
+        { "pin": "A", "text": { "en": "Service shaft — shared access point, breach location.", "nl": "Technische schacht — gedeeld toegangspunt, plaats van inbraak." } },
+        { "pin": "B", "text": { "en": "Vault wall — eighteen inches of concrete, drilled through overnight.", "nl": "Kluismuur — vijfenveertig centimeter beton, 's nachts doorboord." } },
+        { "pin": "C", "text": { "en": "Vault floor — seventy-three boxes forced, tools left behind.", "nl": "Kluisvloer — drieënzeventig kluisjes opengebroken, gereedschap achtergelaten." } },
+        { "pin": "D", "text": { "en": "Alarm panel — two activations logged, neither actioned.", "nl": "Alarmpaneel — twee meldingen gelogd, geen opgevolgd." } },
+        { "pin": "E", "text": { "en": "Access road — camera covering the only vehicle route to the shaft.", "nl": "Toegangsweg — camera die de enige voertuigroute naar de schacht dekt." } }
+      ]
+    },
+    {
+      "num": "03",
+      "type": "forensics",
+      "label": { "en": "Forensic report", "nl": "Forensisch rapport" },
+      "desc": { "en": "Tool marks, DNA and vehicle recognition.", "nl": "Gereedschapssporen, DNA en kentekenherkenning." },
+      "rows": [
+        { "ref": "FR-01", "finding": { "en": "Drill bore diameter matches a batch sold by Colfax's former supply business to a single buyer in 2018 — the buyer was Colfax himself.", "nl": "Boorkerndiameter komt overeen met een partij die Colfax' voormalige groothandel in 2018 aan één koper verkocht — die koper was Colfax zelf." }, "method": { "en": "Tool-mark comparison", "nl": "Gereedschapssporenvergelijking" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-02", "finding": { "en": "DNA recovered from a coffee cup in the service shaft matches B. Colfax.", "nl": "DNA op een koffiebeker in de technische schacht komt overeen met B. Colfax." }, "method": { "en": "DNA", "nl": "DNA" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-03", "finding": { "en": "ANPR logs a vehicle registered to Colfax on the access road both nights, outside resident traffic hours.", "nl": "Kentekenherkenning registreert een voertuig op naam van Colfax beide nachten op de toegangsweg, buiten de bewonersuren." }, "method": { "en": "Plate recognition", "nl": "Kentekenherkenning" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-04", "finding": { "en": "Delivery receipt confirms E. Munro's van on a scheduled route both nights.", "nl": "Afleverbon bevestigt dat de bestelbus van E. Munro beide nachten op een vaste route reed." }, "method": { "en": "Records", "nl": "Administratie" }, "status": { "en": "Negative", "nl": "Negatief" } },
+        { "ref": "FR-05", "finding": { "en": "Fault report filed by R. Talbot predates the break-in by four days, logged and closed without callout.", "nl": "Storingsmelding van R. Talbot dateert van vier dagen voor de inbraak, gelogd en afgesloten zonder dat iemand langskwam." }, "method": { "en": "Records", "nl": "Administratie" }, "status": { "en": "Negative", "nl": "Negatief" } }
+      ]
+    },
+    {
+      "num": "04",
+      "type": "suspects",
+      "label": { "en": "Suspect wall", "nl": "Verdachtenwand" },
+      "desc": { "en": "Four people with means, motive or access.", "nl": "Vier mensen met middel, motief of toegang." }
+    },
+    {
+      "num": "05",
+      "type": "notepad",
+      "label": { "en": "Your notepad", "nl": "Notitieblok" },
+      "desc": { "en": "Write it down. What you flag stays with the file.", "nl": "Schrijf het op. Wat je markeert blijft bij het dossier." },
+      "pinned": [
+        { "tag": { "en": "Timeline", "nl": "Tijdlijn" }, "text": { "en": "Alarm triggered twice, 23:52 Saturday and 00:14 Sunday. Neither followed up.", "nl": "Alarm ging twee keer af, 23:52 zaterdag en 00:14 zondag. Geen van beide opgevolgd." } },
+        { "tag": { "en": "Verified", "nl": "Bevestigd" }, "text": { "en": "Drill bore matches a batch sold to one buyer in 2018.", "nl": "Boorkern komt overeen met een partij verkocht aan één koper in 2018." } },
+        { "tag": { "en": "Open", "nl": "Open" }, "text": { "en": "Why did the monitoring company close both alarm activations without dispatch?", "nl": "Waarom sloot de meldkamer beide alarmmeldingen af zonder iemand te sturen?" } }
+      ]
+    }
+  ]
+}

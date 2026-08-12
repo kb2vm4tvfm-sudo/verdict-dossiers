@@ -1,0 +1,149 @@
+{
+  "keyArt": "assets/covers/192-keyart.jpg",
+  "stamp": { "en": "Halbrook Institute · 19 Mar · charged", "nl": "Halbrook Institute · 19 mrt · vervolgd" },
+
+  "synopsis": {
+    "en": "Between 3 and 19 March, five envelopes containing a fine powder are mailed to a senator's office, two newsrooms, a university lab and the Halbrook Institute itself. Two recipients are hospitalized with respiratory symptoms; both recover. A biosecurity researcher publicly critical of Halbrook is named in press reports nine days in, before the lab work is even finished. Three weeks later, genetic sequencing points somewhere else entirely.",
+    "nl": "Tussen 3 en 19 maart worden vijf enveloppen met een fijn poeder verstuurd naar het kantoor van een senator, twee redacties, een universitair laboratorium en het Halbrook Institute zelf. Twee ontvangers worden opgenomen met ademhalingsklachten; beiden herstellen. Een bioveiligheidsonderzoeker die openlijk kritisch was op Halbrook wordt na negen dagen in de pers genoemd, nog voordat het laboratoriumonderzoek is afgerond. Drie weken later wijst genetische sequencing ergens heel anders naartoe."
+  },
+
+  "detailMeta": [
+    { "label": { "en": "Runtime", "nl": "Speelduur" }, "value": { "en": "55–70 minutes", "nl": "55–70 minuten" } },
+    { "label": { "en": "Players", "nl": "Spelers" }, "value": { "en": "1–4", "nl": "1–4" } },
+    { "label": { "en": "Documents", "nl": "Stukken" }, "value": { "en": "5", "nl": "5" } },
+    { "label": { "en": "Case status", "nl": "Status zaak" }, "value": { "en": "Charged, following a public retraction", "nl": "Vervolgd, na een publieke rectificatie" } }
+  ],
+
+  "suspects": [
+    {
+      "name": "Dr. N. Albrecht",
+      "role": { "en": "Biosecurity researcher", "nl": "Bioveiligheidsonderzoeker" },
+      "note": { "en": "Publicly criticized Halbrook's containment protocols months before the letters. Had lab access to a related strain.", "nl": "Uitte maanden voor de brieven publieke kritiek op de containmentprotocollen van Halbrook. Had labtoegang tot een verwante stam." },
+      "photo": "assets/covers/192-suspect-1.jpg",
+      "cleared": {
+        "en": "He was named publicly within a week, before the strain analysis was even complete, and the accusation followed him regardless. His access was to a related but genetically distinct strain — the sequencing in piece 03 rules him out on its own; everything else against him is timing and a grudge, not evidence.",
+        "nl": "Hij werd binnen een week publiekelijk genoemd, nog voordat de stamanalyse was afgerond, en de beschuldiging bleef aan hem kleven. Zijn toegang gold een verwante maar genetisch afwijkende stam — de sequencing in stuk 03 sluit hem op zichzelf al uit; al het overige tegen hem is timing en een wrok, geen bewijs."
+      }
+    },
+    {
+      "name": "J. Okonkwo",
+      "role": { "en": "Postal contractor", "nl": "Postbezorger" },
+      "note": { "en": "Route covered every collection point used to mail the letters.", "nl": "Route omvatte elk verzamelpunt dat voor de brieven werd gebruikt." },
+      "photo": "assets/covers/192-suspect-2.jpg",
+      "cleared": {
+        "en": "Every postal contractor on that route handled thousands of pieces of mail that week; nothing isolates these five envelopes to him specifically, and he was on documented leave for two of the five mailing dates.",
+        "nl": "Elke postbezorger op die route verwerkte die week duizenden poststukken; niets isoleert deze vijf enveloppen specifiek voor hem, en hij had aantoonbaar verlof op twee van de vijf verzenddata."
+      }
+    },
+    {
+      "name": "C. Ferris",
+      "role": { "en": "Lab technician, Halbrook Institute", "nl": "Laboranttechnicus, Halbrook Institute" },
+      "note": { "en": "An internal audit found her strain log did not match freezer stock three months before the letters.", "nl": "Een interne audit vond drie maanden voor de brieven een discrepantie tussen haar stamlogboek en de vriezervoorraad." },
+      "photo": "assets/covers/192-suspect-3.jpg"
+    },
+    {
+      "name": "M. Duval",
+      "role": { "en": "Former Halbrook researcher", "nl": "Voormalig onderzoeker Halbrook" },
+      "note": { "en": "Denied grant renewal fourteen months before the letters; posted publicly about it at the time.", "nl": "Kreeg veertien maanden voor de brieven zijn subsidie niet verlengd; deed daar destijds publiekelijk uitspraken over." },
+      "photo": "assets/covers/192-suspect-4.jpg",
+      "cleared": {
+        "en": "His grievance is real and on the record, loudly — but he left the country nine months before the first letter was mailed, and border records place him abroad for the entire window. Motive without opportunity.",
+        "nl": "Zijn grief is echt en luid gedocumenteerd — maar hij verliet negen maanden voor de eerste brief het land, en grensgegevens plaatsen hem de hele periode in het buitenland. Motief zonder gelegenheid."
+      }
+    }
+  ],
+
+  "solution": {
+    "culprit": 2,
+    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen." },
+    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader." },
+    "correct": {
+      "en": "Ferris. Genetic sequencing on the recovered powder matches a substrain cultured only in the Halbrook Institute's own freezer stock — the same freezer her inventory log had failed to reconcile three months earlier. The discrepancy was never resolved; it was covered by a log entry backdated in a font her lab's printer could not produce until a cartridge change two weeks after the date on the entry. She had freezer access, the matching substrain, and a paper trail that only exists because she tried too hard to erase one.",
+      "nl": "Ferris. Genetische sequencing op het teruggevonden poeder komt overeen met een substam die alleen in de eigen vriezervoorraad van het Halbrook Institute wordt gekweekt — dezelfde vriezer waarover haar inventarislogboek drie maanden eerder niet klopte. De discrepantie werd nooit opgelost; ze werd afgedekt met een teruggedateerde logboekvermelding, gezet in een lettertype dat de printer van haar lab pas kon produceren na een cartridgewissel twee weken ná de datum op de vermelding. Zij had toegang tot de vriezer, de bijpassende substam, en een papieren spoor dat alleen bestaat omdat ze te hard haar best deed er een uit te wissen."
+    },
+    "wrong": {
+      "en": "The public accusation came before the lab work was finished, and the lab work is what actually closes this. Read the forensic report again — the substrain only exists in one freezer, and only one person on the wall had unsupervised access to it.",
+      "nl": "De publieke beschuldiging kwam voordat het laboratoriumonderzoek klaar was, en dat onderzoek is wat de zaak daadwerkelijk sluit. Lees het forensisch rapport opnieuw — de substam bestaat maar in één vriezer, en slechts één persoon aan de wand had daar onbewaakt toegang toe."
+    }
+  },
+
+  "pieces": [
+    {
+      "num": "01",
+      "type": "report",
+      "label": { "en": "Investigation report", "nl": "Onderzoeksrapport" },
+      "desc": { "en": "The mailings, the early public naming, and the correction that followed.", "nl": "De verzendingen, de vroege publieke naamsvermelding, en de rectificatie die volgde." },
+      "blocks": [
+        {
+          "head": { "en": "Incident", "nl": "Melding" },
+          "text": { "en": "Between 3 and 19 March, five envelopes containing a fine powder are mailed to a senator's office, two newsrooms, a university lab, and the Halbrook Institute itself. Two recipients are hospitalized with respiratory symptoms; all recover.", "nl": "Tussen 3 en 19 maart worden vijf enveloppen met een fijn poeder verstuurd naar het kantoor van een senator, twee redacties, een universitair laboratorium en het Halbrook Institute zelf. Twee ontvangers worden opgenomen met ademhalingsklachten; allen herstellen." }
+        },
+        {
+          "head": { "en": "Postmark", "nl": "Poststempel" },
+          "text": { "en": "All five envelopes are postmarked from the same collection box on Route 14.", "nl": "Alle vijf de enveloppen zijn afgestempeld vanuit dezelfde brievenbus op Route 14." }
+        },
+        {
+          "head": { "en": "Public attention", "nl": "Publieke aandacht" },
+          "text": { "en": "A biosecurity researcher publicly critical of Halbrook is named in press reports nine days after the first letter, before laboratory analysis is complete.", "nl": "Een bioveiligheidsonderzoeker die openlijk kritisch was op Halbrook wordt negen dagen na de eerste brief in de pers genoemd, nog voor het laboratoriumonderzoek is afgerond." }
+        },
+        {
+          "head": { "en": "Correction", "nl": "Rectificatie" },
+          "text": { "en": "Genetic sequencing three weeks later identifies a substrain traceable to a single freezer stock, ruling out the publicly named researcher.", "nl": "Genetische sequencing drie weken later identificeert een substam die te herleiden is tot één vriezervoorraad, wat de publiekelijk genoemde onderzoeker uitsluit." }
+        },
+        {
+          "head": { "en": "Status", "nl": "Status" },
+          "text": { "en": "Charges filed against a Halbrook lab technician following the sequencing match and a review of internal inventory records.", "nl": "Vervolging ingesteld tegen een laboranttechnicus van Halbrook na de sequencing-match en een herziening van de interne voorraadadministratie." }
+        }
+      ],
+      "attachments": [
+        { "title": { "en": "Envelope 3 of 5", "nl": "Envelop 3 van 5" }, "meta": { "en": "Evidence copy, postmark visible", "nl": "Bewijskopie, poststempel zichtbaar" } },
+        { "title": { "en": "Halbrook freezer inventory log", "nl": "Vriezerinventarislog Halbrook" }, "meta": { "en": "Discrepancy flagged, 3 months prior", "nl": "Discrepantie gemeld, 3 maanden eerder" } },
+        { "title": { "en": "Press clipping", "nl": "Persknipsel" }, "meta": { "en": "Early, since-retracted naming", "nl": "Vroege, later ingetrokken naamsvermelding" } }
+      ]
+    },
+    {
+      "num": "02",
+      "type": "scene",
+      "label": { "en": "Institute floor plan", "nl": "Plattegrond instituut" },
+      "desc": { "en": "Freezer access, the print station and the outgoing mailroom.", "nl": "Vriezertoegang, het printstation en de uitgaande postkamer." },
+      "image": "assets/covers/192-scene.jpg",
+      "pins": [
+        { "pin": "A", "text": { "en": "Freezer unit 4 — substrain stock, badge-access only.", "nl": "Vriezer 4 — substamvoorraad, alleen toegankelijk met pasje." } },
+        { "pin": "B", "text": { "en": "Ferris's bench — adjacent to the freezer, unsupervised hours logged.", "nl": "Werkplek Ferris — naast de vriezer, onbewaakte uren gelogd." } },
+        { "pin": "C", "text": { "en": "Print station — shared lab printer, cartridge change logged two weeks after the disputed entry's date.", "nl": "Printstation — gedeelde labprinter, cartridgewissel gelogd twee weken na de datum op de betwiste vermelding." } },
+        { "pin": "D", "text": { "en": "Mailroom — outgoing institute mail, no camera coverage.", "nl": "Postkamer — uitgaande post van het instituut, geen camerabewaking." } },
+        { "pin": "E", "text": { "en": "Route 14 collection box — postmark origin for all five letters.", "nl": "Brievenbus Route 14 — herkomst van het poststempel op alle vijf de brieven." } }
+      ]
+    },
+    {
+      "num": "03",
+      "type": "forensics",
+      "label": { "en": "Forensic report", "nl": "Forensisch rapport" },
+      "desc": { "en": "Sequencing, document analysis and badge records.", "nl": "Sequencing, documentanalyse en pasjesregistratie." },
+      "rows": [
+        { "ref": "FR-01", "finding": { "en": "Substrain in recovered powder matches Halbrook freezer unit 4 stock exclusively.", "nl": "Substam in het teruggevonden poeder komt uitsluitend overeen met de voorraad van vriezer 4 van Halbrook." }, "method": { "en": "Genetic sequencing", "nl": "Genetische sequencing" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-02", "finding": { "en": "Backdated inventory log entry printed in a font/cartridge combination not in use until two weeks after its stated date.", "nl": "Teruggedateerde logboekvermelding gedrukt met een lettertype/cartridgecombinatie die pas twee weken na de gestelde datum in gebruik was." }, "method": { "en": "Document forensics", "nl": "Documentforensisch onderzoek" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-03", "finding": { "en": "Badge log shows unsupervised freezer access by C. Ferris on 9 of the preceding 14 nights.", "nl": "Pasjeslog toont onbewaakte vriezertoegang door C. Ferris op 9 van de voorgaande 14 nachten." }, "method": { "en": "Access records", "nl": "Toegangsregistratie" }, "status": { "en": "Indicative", "nl": "Indicatief" } },
+        { "ref": "FR-04", "finding": { "en": "Publicly named researcher's lab strain sequenced as genetically distinct from the recovered powder.", "nl": "De labstam van de publiekelijk genoemde onderzoeker blijkt genetisch af te wijken van het teruggevonden poeder." }, "method": { "en": "Genetic sequencing", "nl": "Genetische sequencing" }, "status": { "en": "Negative", "nl": "Negatief" } },
+        { "ref": "FR-05", "finding": { "en": "Postal contractor's route confirmed but no isolating evidence links any single handler to the five envelopes.", "nl": "Postroute bevestigd, maar geen onderscheidend bewijs koppelt één specifieke bezorger aan de vijf enveloppen." }, "method": { "en": "Records", "nl": "Administratie" }, "status": { "en": "Negative", "nl": "Negatief" } }
+      ]
+    },
+    {
+      "num": "04",
+      "type": "suspects",
+      "label": { "en": "Suspect wall", "nl": "Verdachtenwand" },
+      "desc": { "en": "Four people connected to the letters, the strain, or the route.", "nl": "Vier mensen verbonden aan de brieven, de stam, of de route." }
+    },
+    {
+      "num": "05",
+      "type": "notepad",
+      "label": { "en": "Your notepad", "nl": "Notitieblok" },
+      "desc": { "en": "Write it down. What you flag stays with the file.", "nl": "Schrijf het op. Wat je markeert blijft bij het dossier." },
+      "pinned": [
+        { "tag": { "en": "Contradiction", "nl": "Tegenstrijdig" }, "text": { "en": "Public naming came 9 days in. Sequencing that clears him took 3 weeks.", "nl": "Publieke naamsvermelding na 9 dagen. Sequencing die hem vrijpleit duurde 3 weken." } },
+        { "tag": { "en": "Verified", "nl": "Bevestigd" }, "text": { "en": "Substrain traces to one freezer only.", "nl": "Substam is te herleiden tot slechts één vriezer." } },
+        { "tag": { "en": "Open", "nl": "Open" }, "text": { "en": "Who else could have printed on that station in the two weeks before the cartridge change?", "nl": "Wie kon er nog meer printen op dat station in de twee weken voor de cartridgewissel?" } }
+      ]
+    }
+  ]
+}

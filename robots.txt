@@ -1,0 +1,4 @@
+# Closed test. The link is meant for people who were given it directly.
+# Delete this file (and the noindex meta tag in index.html) before going public.
+User-agent: *
+Disallow: /

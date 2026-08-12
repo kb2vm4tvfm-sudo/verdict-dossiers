@@ -1,0 +1,100 @@
+{
+  "_readme": "Copy this file to <id>.json, fill it in, then add a matching entry to data/manifest.json. Every player-facing string may be either a plain string or an {\"en\": ..., \"nl\": ...} pair. Delete the pieces you do not need — the sidebar, the progress bar and the unlock order all follow this array.",
+
+  "keyArt": null,
+  "stamp": { "en": "Place · date · confidential", "nl": "Plaats · datum · vertrouwelijk" },
+
+  "synopsis": { "en": "", "nl": "" },
+
+  "detailMeta": [
+    { "label": { "en": "Runtime", "nl": "Speelduur" }, "value": { "en": "60 minutes", "nl": "60 minuten" } },
+    { "label": { "en": "Players", "nl": "Spelers" }, "value": "1–4" },
+    { "label": { "en": "Documents", "nl": "Stukken" }, "value": "7" },
+    { "label": { "en": "Case status", "nl": "Status zaak" }, "value": { "en": "", "nl": "" } }
+  ],
+
+  "suspects": [
+    {
+      "name": "",
+      "role": { "en": "", "nl": "" },
+      "note": { "en": "", "nl": "" },
+      "photo": null,
+      "cleared": { "en": "Why this person is ruled out. Optional — falls back to solution.wrong.", "nl": "" }
+    }
+  ],
+
+  "solution": {
+    "culprit": 0,
+    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen." },
+    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader." },
+    "correct": { "en": "", "nl": "" },
+    "wrong": { "en": "", "nl": "" }
+  },
+
+  "pieces": [
+    {
+      "num": "01",
+      "type": "report",
+      "label": { "en": "Police report", "nl": "Proces-verbaal" },
+      "desc": { "en": "", "nl": "" },
+      "blocks": [{ "head": { "en": "", "nl": "" }, "text": { "en": "", "nl": "" } }],
+      "attachments": [{ "title": { "en": "", "nl": "" }, "meta": { "en": "", "nl": "" } }]
+    },
+    {
+      "num": "02",
+      "type": "scene",
+      "label": { "en": "Scene floor plan", "nl": "Plattegrond plaats delict" },
+      "desc": { "en": "", "nl": "" },
+      "image": "assets/covers/<id>-scene.jpg",
+      "pins": [{ "pin": "A", "text": { "en": "", "nl": "" } }]
+    },
+    {
+      "num": "03",
+      "type": "forensics",
+      "label": { "en": "Forensic report", "nl": "Forensisch rapport" },
+      "desc": { "en": "", "nl": "" },
+      "rows": [
+        {
+          "ref": "FR-01",
+          "finding": { "en": "", "nl": "" },
+          "method": { "en": "", "nl": "" },
+          "status": { "en": "Conclusive", "nl": "Sluitend" },
+          "conclusive": true
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "type": "comms",
+      "label": { "en": "Phone and message logs", "nl": "Telefoon- en berichtenlogs" },
+      "desc": { "en": "", "nl": "" },
+      "messages": [
+        { "who": "", "time": "00:00", "side": "them", "text": { "en": "", "nl": "" } },
+        { "who": "", "time": "00:00", "side": "subject", "text": { "en": "", "nl": "" } }
+      ],
+      "calls": [{ "num": "", "meta": { "en": "", "nl": "" } }]
+    },
+    {
+      "num": "05",
+      "type": "suspects",
+      "label": { "en": "Suspect wall", "nl": "Verdachtenwand" },
+      "desc": { "en": "", "nl": "" }
+    },
+    {
+      "num": "06",
+      "type": "database",
+      "label": { "en": "Crime database", "nl": "Crime database" },
+      "desc": { "en": "", "nl": "" },
+      "rows": [
+        { "code": "", "title": { "en": "", "nl": "" }, "src": { "en": "", "nl": "" }, "type": { "en": "", "nl": "" } }
+      ]
+    },
+    {
+      "num": "07",
+      "type": "notepad",
+      "label": { "en": "Your notepad", "nl": "Notitieblok" },
+      "desc": { "en": "", "nl": "" },
+      "pinned": [{ "tag": { "en": "", "nl": "" }, "text": { "en": "", "nl": "" } }]
+    }
+  ]
+}

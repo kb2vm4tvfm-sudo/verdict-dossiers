@@ -1,0 +1,157 @@
+{
+  "keyArt": "assets/covers/176-keyart.jpg",
+  "stamp": { "en": "Harbour office · 09 Mar · constructed case", "nl": "Havenkantoor · 09 mrt · geconstrueerde zaak" },
+
+  "synopsis": {
+    "en": "A twelve-metre cabin cruiser, the Halcyon, is sold twice in the same month — to two buyers, by two different sellers, with two signed bills of sale. Both buyers paid. The registered owner has been abroad since January and has never set foot on the boat. The harbour office keeps a key log, a berth-fee ledger and a gate-camera roster, and the three do not agree with one another.",
+    "nl": "Een kajuitboot van twaalf meter, de Halcyon, wordt in dezelfde maand twee keer verkocht — aan twee kopers, door twee verschillende verkopers, met twee getekende koopakten. Beide kopers hebben betaald. De geregistreerde eigenaar is sinds januari in het buitenland en heeft nooit een voet op de boot gezet. Het havenkantoor houdt een sleutellogboek, een ligplaatsadministratie en een rooster van de poortcamera bij, en die drie komen niet met elkaar overeen."
+  },
+
+  "detailMeta": [
+    { "label": { "en": "Runtime", "nl": "Speelduur" }, "value": { "en": "40–50 minutes", "nl": "40–50 minuten" } },
+    { "label": { "en": "Players", "nl": "Spelers" }, "value": { "en": "1–4", "nl": "1–4" } },
+    { "label": { "en": "Documents", "nl": "Stukken" }, "value": { "en": "5", "nl": "5" } },
+    { "label": { "en": "Case status", "nl": "Status zaak" }, "value": { "en": "Constructed — not a real case", "nl": "Geconstrueerd — geen echte zaak" } }
+  ],
+
+  "suspects": [
+    {
+      "name": "T. Reijer",
+      "role": { "en": "Registered owner", "nl": "Geregistreerd eigenaar" },
+      "note": { "en": "Abroad since 6 January. Both bills of sale carry his name.", "nl": "Sinds 6 januari in het buitenland. Beide koopakten dragen zijn naam." },
+      "photo": "assets/covers/176-suspect-1.jpg",
+      "cleared": {
+        "en": "His name is on both documents, which is exactly the point — he is the one being impersonated. Border records place him outside the country for the whole window, and the signature on both bills is a copy of the specimen held by the harbour office, traced rather than written.",
+        "nl": "Zijn naam staat op beide documenten, en dat is precies de kern — hij is degene die wordt nagebootst. Grensgegevens plaatsen hem de hele periode buiten het land, en de handtekening op beide akten is een kopie van het exemplaar bij het havenkantoor, overgetrokken in plaats van geschreven."
+      }
+    },
+    {
+      "name": "J. Willems",
+      "role": { "en": "Second buyer", "nl": "Tweede koper" },
+      "note": { "en": "Paid in cash. Never received a key.", "nl": "Betaalde contant. Kreeg nooit een sleutel." },
+      "photo": "assets/covers/176-suspect-2.jpg",
+      "cleared": {
+        "en": "He paid forty-one thousand for a boat he was never given the keys to, and he is the one who reported it. Nothing in the file gives him access to the specimen signature or the berth ledger.",
+        "nl": "Hij betaalde eenenveertigduizend voor een boot waarvan hij nooit de sleutels kreeg, en hij deed de melding. Niets in het dossier geeft hem toegang tot de voorbeeldhandtekening of de ligplaatsadministratie."
+      }
+    },
+    {
+      "name": "S. de Kok",
+      "role": { "en": "Harbour office clerk", "nl": "Medewerker havenkantoor" },
+      "note": { "en": "Holds the spare keys and the owner's signature on file.", "nl": "Beheert de reservesleutels en de handtekening van de eigenaar." },
+      "photo": "assets/covers/176-suspect-3.jpg"
+    },
+    {
+      "name": "A. Prins",
+      "role": { "en": "Boatyard mechanic", "nl": "Monteur werf" },
+      "note": { "en": "Showed the boat to both buyers. Says he was asked to.", "nl": "Liet beide kopers de boot zien. Zegt dat hem dat gevraagd is." },
+      "photo": "assets/covers/176-suspect-4.jpg",
+      "cleared": {
+        "en": "He showed the boat to both buyers, which puts him at the centre of the story and nowhere near its cause. He was working from a written instruction slip he still has — signed by the office, not by him. Compare the gate log in piece 02 with the key log in piece 03.",
+        "nl": "Hij liet beide kopers de boot zien, wat hem midden in het verhaal plaatst maar nergens bij de oorzaak. Hij werkte volgens een schriftelijke opdracht die hij nog heeft — getekend door het kantoor, niet door hem. Vergelijk het poortlogboek in stuk 02 met het sleutellogboek in stuk 03."
+      }
+    }
+  ],
+
+  "solution": {
+    "culprit": 2,
+    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen." },
+    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader." },
+    "correct": {
+      "en": "The clerk. Only one person had all three things at once: the spare keys, the owner's specimen signature on file, and write access to the berth ledger that was altered to show the owner present in February. The gate camera logs her badge at 19:42 on both viewing nights — after closing, with no berth fee recorded for either visit.",
+      "nl": "De kantoormedewerker. Slechts één persoon had alle drie tegelijk: de reservesleutels, de voorbeeldhandtekening van de eigenaar, en schrijfrechten op de ligplaatsadministratie die is aangepast om de eigenaar in februari aanwezig te laten lijken. De poortcamera registreert haar pas om 19:42 op beide bezichtigingsavonden — na sluitingstijd, zonder dat voor een van beide bezoeken ligplaatsgeld is genoteerd."
+    },
+    "wrong": {
+      "en": "Work back from what the forgery needed rather than from who was standing on the deck. Whoever did this had to hold the keys, the signature on file and the ledger at the same time. Only one person in the file holds all three.",
+      "nl": "Redeneer terug vanuit wat de vervalsing nodig had, niet vanuit wie er op het dek stond. Wie dit deed moest tegelijk de sleutels, de handtekening in het archief én de administratie in handen hebben. Slechts één persoon in het dossier heeft alle drie."
+    }
+  },
+
+  "pieces": [
+    {
+      "num": "01",
+      "type": "report",
+      "label": { "en": "Complaint file", "nl": "Aangiftedossier" },
+      "desc": { "en": "Both buyers' statements and the harbour office response.", "nl": "De verklaringen van beide kopers en de reactie van het havenkantoor." },
+      "blocks": [
+        {
+          "head": { "en": "Complaint", "nl": "Aangifte" },
+          "text": {
+            "en": "On 3 March a buyer reports that the cabin cruiser he purchased on 11 February is occupied by another man who also holds a signed bill of sale. Both documents name the same seller and the same vessel.",
+            "nl": "Op 3 maart meldt een koper dat de kajuitboot die hij op 11 februari kocht wordt bewoond door een andere man die eveneens een getekende koopakte heeft. Beide documenten noemen dezelfde verkoper en hetzelfde vaartuig."
+          }
+        },
+        {
+          "head": { "en": "Payments", "nl": "Betalingen" },
+          "text": {
+            "en": "The first buyer transferred thirty-eight thousand to an account closed the following week. The second paid forty-one thousand in cash at the harbour office and was given a receipt on office letterhead.",
+            "nl": "De eerste koper maakte achtendertigduizend over naar een rekening die de week daarna is opgeheven. De tweede betaalde eenenveertigduizend contant op het havenkantoor en kreeg een kwitantie op briefpapier van het kantoor."
+          }
+        },
+        {
+          "head": { "en": "Owner", "nl": "Eigenaar" },
+          "text": {
+            "en": "The registered owner is reached by telephone in Portugal. He states he has not sold the vessel, has not been aboard since November, and did not authorise any viewing.",
+            "nl": "De geregistreerde eigenaar wordt telefonisch bereikt in Portugal. Hij verklaart het vaartuig niet te hebben verkocht, sinds november niet aan boord te zijn geweest en geen bezichtiging te hebben toegestaan."
+          }
+        },
+        {
+          "head": { "en": "Harbour office", "nl": "Havenkantoor" },
+          "text": {
+            "en": "The office confirms it holds a specimen signature for every berth holder, a spare key cabinet, and a berth-fee ledger. All three are kept in the back office. Two staff have the code.",
+            "nl": "Het kantoor bevestigt dat het van elke ligplaatshouder een voorbeeldhandtekening bewaart, een kast met reservesleutels heeft en een ligplaatsadministratie bijhoudt. Alle drie staan in het achterkantoor. Twee medewerkers kennen de code."
+          }
+        }
+      ],
+      "attachments": [
+        { "title": { "en": "Bill of sale — 11 Feb", "nl": "Koopakte — 11 feb" }, "meta": { "en": "Copy · signed", "nl": "Kopie · getekend" } },
+        { "title": { "en": "Bill of sale — 24 Feb", "nl": "Koopakte — 24 feb" }, "meta": { "en": "Copy · signed", "nl": "Kopie · getekend" } },
+        { "title": { "en": "Cash receipt", "nl": "Kwitantie contant" }, "meta": { "en": "Office letterhead", "nl": "Briefpapier kantoor" } }
+      ]
+    },
+    {
+      "num": "02",
+      "type": "scene",
+      "label": { "en": "Harbour layout", "nl": "Plattegrond haven" },
+      "desc": { "en": "Berth, gate, office and the camera that covers one of them.", "nl": "Ligplaats, poort, kantoor en de camera die er één van dekt." },
+      "image": "assets/covers/176-scene.jpg",
+      "pins": [
+        { "pin": "A", "text": { "en": "Berth 14 — the Halcyon, moored since November, unmoved.", "nl": "Ligplaats 14 — de Halcyon, sinds november afgemeerd, niet verplaatst." } },
+        { "pin": "B", "text": { "en": "Gate — badge reader. Logs 19:42 on both viewing nights.", "nl": "Poort — pasjeslezer. Registreert 19:42 op beide bezichtigingsavonden." } },
+        { "pin": "C", "text": { "en": "Harbour office — closes 17:30. Back room holds keys and files.", "nl": "Havenkantoor — sluit 17:30. Achterkamer bevat sleutels en dossiers." } },
+        { "pin": "D", "text": { "en": "Camera — covers the gate only, not the pontoon.", "nl": "Camera — dekt alleen de poort, niet de steiger." } },
+        { "pin": "E", "text": { "en": "Key cabinet — coded. Two staff hold the code.", "nl": "Sleutelkast — met code. Twee medewerkers kennen de code." } }
+      ]
+    },
+    {
+      "num": "03",
+      "type": "forensics",
+      "label": { "en": "Document examination", "nl": "Documentonderzoek" },
+      "desc": { "en": "The two bills of sale, the ledger and the key log.", "nl": "De twee koopakten, de administratie en het sleutellogboek." },
+      "rows": [
+        { "ref": "DE-01", "finding": { "en": "Both signatures traced from the same specimen held on file.", "nl": "Beide handtekeningen overgetrokken van hetzelfde exemplaar in het archief." }, "method": { "en": "Comparison", "nl": "Vergelijking" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "DE-02", "finding": { "en": "Berth ledger altered: February entry overwritten to show owner present.", "nl": "Ligplaatsadministratie gewijzigd: februari-invoer overschreven om eigenaar aanwezig te tonen." }, "method": { "en": "Ink layering", "nl": "Inktopbouw" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "DE-03", "finding": { "en": "Key log shows berth 14 spare signed out twice, initials illegible.", "nl": "Sleutellogboek toont reservesleutel ligplaats 14 twee keer uitgegeven, parafen onleesbaar." }, "method": { "en": "Records", "nl": "Administratie" }, "status": { "en": "Indicative", "nl": "Indicatief" } },
+        { "ref": "DE-04", "finding": { "en": "Cash receipt printed on genuine office letterhead stock.", "nl": "Kwitantie gedrukt op echt briefpapier van het kantoor." }, "method": { "en": "Paper stock", "nl": "Papiersoort" }, "status": { "en": "Indicative", "nl": "Indicatief" } },
+        { "ref": "DE-05", "finding": { "en": "Border records place the registered owner abroad throughout.", "nl": "Grensgegevens plaatsen de geregistreerde eigenaar de hele periode in het buitenland." }, "method": { "en": "Records", "nl": "Administratie" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true }
+      ]
+    },
+    {
+      "num": "04",
+      "type": "suspects",
+      "label": { "en": "Suspect wall", "nl": "Verdachtenwand" },
+      "desc": { "en": "Four people around one boat.", "nl": "Vier mensen rond één boot." }
+    },
+    {
+      "num": "05",
+      "type": "notepad",
+      "label": { "en": "Your notepad", "nl": "Notitieblok" },
+      "desc": { "en": "Write it down. What you flag stays with the file.", "nl": "Schrijf het op. Wat je markeert blijft bij het dossier." },
+      "pinned": [
+        { "tag": { "en": "Needed", "nl": "Nodig" }, "text": { "en": "Keys + specimen signature + ledger access. Who has all three?", "nl": "Sleutels + voorbeeldhandtekening + toegang tot administratie. Wie heeft alle drie?" } },
+        { "tag": { "en": "Timing", "nl": "Tijdstip" }, "text": { "en": "Both viewings at 19:42 — the office closed at 17:30.", "nl": "Beide bezichtigingen om 19:42 — het kantoor sloot om 17:30." } },
+        { "tag": { "en": "Open", "nl": "Open" }, "text": { "en": "No berth fee was recorded for either visit. Why not?", "nl": "Voor geen van beide bezoeken is ligplaatsgeld genoteerd. Waarom niet?" } }
+      ]
+    }
+  ]
+}

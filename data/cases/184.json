@@ -1,0 +1,210 @@
+{
+  "keyArt": "assets/covers/184-keyart.jpg",
+  "stamp": { "en": "Ashfield · 14 Nov · confidential", "nl": "Ashfield · 14 nov · vertrouwelijk" },
+
+  "synopsis": {
+    "en": "Ashfield Freight reports its night manager absent from a scheduled shift. No missing-person report is filed for nine days. An internal audit then finds forty-one freight manifests altered across eight months, all carrying the same authorising initials. A storage unit rented under a second name holds the original ledgers. The file contains everything the investigators had; the company settled with its insurer and admitted no fault.",
+    "nl": "Ashfield Freight meldt dat de nachtchef niet op zijn dienst is verschenen. Pas na negen dagen wordt aangifte van vermissing gedaan. Een interne audit vindt vervolgens eenenveertig vrachtbrieven die over acht maanden zijn gewijzigd, allemaal met dezelfde paraaf. In een opslagruimte, gehuurd onder een tweede naam, liggen de originele grootboeken. Het dossier bevat alles wat de rechercheurs hadden; het bedrijf schikte met de verzekeraar en erkende geen aansprakelijkheid."
+  },
+
+  "detailMeta": [
+    { "label": { "en": "Runtime", "nl": "Speelduur" }, "value": { "en": "60–75 minutes", "nl": "60–75 minuten" } },
+    { "label": { "en": "Players", "nl": "Spelers" }, "value": { "en": "1–4", "nl": "1–4" } },
+    { "label": { "en": "Documents", "nl": "Stukken" }, "value": { "en": "7", "nl": "7" } },
+    { "label": { "en": "Case status", "nl": "Status zaak" }, "value": { "en": "Charged, subject at large", "nl": "Vervolgd, verdachte voortvluchtig" } }
+  ],
+
+  "suspects": [
+    {
+      "name": "H. Bakker",
+      "role": { "en": "Warehouse lead", "nl": "Teamleider loods" },
+      "note": {
+        "en": "Wrote to the subject twice on the night. Has depot keys.",
+        "nl": "Schreef die nacht twee keer aan betrokkene. Heeft sleutels van de loods."
+      },
+      "photo": "assets/covers/184-suspect-1.jpg"
+    },
+    {
+      "name": "L. Verduyn",
+      "role": { "en": "Day supervisor", "nl": "Dagchef" },
+      "note": {
+        "en": "Filed the report, nine days late. Signed off on the audit list.",
+        "nl": "Deed de melding, negen dagen te laat. Tekende de auditlijst af."
+      },
+      "photo": "assets/covers/184-suspect-2.jpg",
+      "cleared": {
+        "en": "The nine-day delay looks bad, and it is — but the handwriting on all forty-one sets of initials belongs to one hand, and it is not hers. She signed the audit list in her own name, openly, on a document she knew would be read. Read piece 03 again.",
+        "nl": "De vertraging van negen dagen oogt slecht, en dat is het ook — maar alle eenenveertig parafen zijn door één hand gezet, en niet de hare. Zij tekende de auditlijst onder haar eigen naam, openlijk, op een document waarvan zij wist dat het gelezen zou worden. Lees stuk 03 opnieuw."
+      }
+    },
+    {
+      "name": "R. Osei",
+      "role": { "en": "Freight broker", "nl": "Vrachtmakelaar" },
+      "note": {
+        "en": "Received 31 of the 41 altered manifests.",
+        "nl": "Ontving 31 van de 41 gewijzigde vrachtbrieven."
+      },
+      "photo": "assets/covers/184-suspect-3.jpg",
+      "cleared": {
+        "en": "He received the altered manifests — he did not write them. A broker is sent whatever the depot sends. Nothing in the file puts him inside the building, on the key register, or anywhere near the storage unit on Halden Road.",
+        "nl": "Hij ontving de gewijzigde vrachtbrieven — hij schreef ze niet. Een makelaar krijgt wat de loods verstuurt. Niets in het dossier plaatst hem in het gebouw, op het sleutelregister, of in de buurt van de opslagruimte aan de Halden Road."
+      }
+    },
+    {
+      "name": "M. Dane",
+      "role": { "en": "Contract driver", "nl": "Chauffeur op contract" },
+      "note": {
+        "en": "Joined six weeks before the audit. Rented on Halden Road.",
+        "nl": "Zes weken voor de audit in dienst. Huurde aan de Halden Road."
+      },
+      "photo": "assets/covers/184-suspect-4.jpg",
+      "cleared": {
+        "en": "The Halden Road address is the strongest thing pointing at him, and it is a coincidence of street, not of unit. The manifests were being altered for eight months; he had been at the company for six weeks. The timeline rules him out on its own.",
+        "nl": "Het adres aan de Halden Road is het sterkste wat naar hem wijst, en het is toeval van straat, niet van opslagruimte. De vrachtbrieven werden acht maanden lang gewijzigd; hij was zes weken in dienst. De tijdlijn sluit hem alleen al daarom uit."
+      }
+    }
+  ],
+
+  "solution": {
+    "culprit": 0,
+    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen." },
+    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader." },
+    "correct": {
+      "en": "Charged on two counts of falsified freight documentation and one count of unlawful disposal. The initials on the altered manifests were the thing that closed it: forty-one sets in the night manager's name, none of them written by him, all by one hand — and the storage contract on Halden Road carries the same pen-pressure profile. He held depot keys, he knew the audit list was out before it was published, and hours before the depot was found empty he was telling the night manager to stop touching the binder and to keep it out of writing.",
+      "nl": "Vervolgd voor twee feiten van valselijk opgemaakte vrachtdocumenten en één feit van wederrechtelijke verwerking. De parafen op de gewijzigde vrachtbrieven gaven de doorslag: eenenveertig keer op naam van de nachtchef, geen enkele door hemzelf gezet, allemaal door één hand — en het huurcontract aan de Halden Road heeft hetzelfde drukprofiel. Hij had sleutels van de loods, hij wist dat de auditlijst eruit was voordat die gepubliceerd werd, en uren voordat de loods leeg werd aangetroffen zei hij tegen de nachtchef dat hij van de ordner af moest blijven en het niet op papier moest zetten."
+    },
+    "wrong": {
+      "en": "The initials on the altered manifests never matched this person. Read piece 03 again — the forensic report narrows it to a single hand, and the timeline in piece 01 does the rest.",
+      "nl": "De parafen op de gewijzigde vrachtbrieven pasten nooit bij deze persoon. Lees stuk 03 opnieuw — het forensisch rapport brengt het terug tot één hand, en de tijdlijn in stuk 01 doet de rest."
+    }
+  },
+
+  "pieces": [
+    {
+      "num": "01",
+      "type": "report",
+      "label": { "en": "Police report", "nl": "Proces-verbaal" },
+      "desc": { "en": "The full report, statements and the first response log.", "nl": "Het volledige verbaal, de verklaringen en het eerste meldingsjournaal." },
+      "blocks": [
+        {
+          "head": { "en": "Incident", "nl": "Melding" },
+          "text": {
+            "en": "On 14 November a report is received from Ashfield Freight regarding an employee, 34, who did not appear for the 22:00 shift. The reporting party is the day supervisor.",
+            "nl": "Op 14 november komt een melding binnen van Ashfield Freight over een medewerker, 34, die niet op de dienst van 22:00 uur is verschenen. Melder is de dagchef."
+          }
+        },
+        {
+          "head": { "en": "First response", "nl": "Eerste optreden" },
+          "text": {
+            "en": "Officers attend the depot at 07:20 the following morning. The subject’s vehicle is in the yard, unlocked. His jacket and phone are in the cab. No sign of struggle is recorded.",
+            "nl": "Agenten gaan de volgende ochtend om 07:20 uur ter plaatse. Het voertuig van betrokkene staat op het terrein, niet afgesloten. Zijn jas en telefoon liggen in de cabine. Sporen van worsteling zijn niet aangetroffen."
+          }
+        },
+        {
+          "head": { "en": "Statements", "nl": "Verklaringen" },
+          "text": {
+            "en": "Four employees are interviewed on site. Three describe the subject as reliable. The fourth states he had been “moving paperwork around” for months and had asked to be left off the audit list.",
+            "nl": "Vier medewerkers worden ter plaatse gehoord. Drie omschrijven betrokkene als betrouwbaar. De vierde verklaart dat hij maandenlang “met papieren schoof” en had gevraagd van de auditlijst te worden gehaald."
+          }
+        },
+        {
+          "head": { "en": "Documents", "nl": "Documenten" },
+          "text": {
+            "en": "Forty-one manifests are seized from the office and a further set from a storage unit on Halden Road. The two sets do not agree.",
+            "nl": "Eenenveertig vrachtbrieven zijn in het kantoor in beslag genomen en een tweede set in een opslagruimte aan de Halden Road. De twee sets komen niet overeen."
+          }
+        },
+        {
+          "head": { "en": "Status", "nl": "Status" },
+          "text": {
+            "en": "Charges filed 3 December. The subject has not been located. Case remains open pending his whereabouts.",
+            "nl": "Op 3 december is vervolging ingesteld. Betrokkene is niet aangetroffen. De zaak blijft open in afwachting van zijn verblijfplaats."
+          }
+        }
+      ],
+      "attachments": [
+        { "title": { "en": "Manifest 4471-B", "nl": "Vrachtbrief 4471-B" }, "meta": { "en": "Original · seized", "nl": "Origineel · in beslag" } },
+        { "title": { "en": "Depot key register", "nl": "Sleutelregister loods" }, "meta": { "en": "Copy · 8 pages", "nl": "Kopie · 8 pagina’s" } },
+        { "title": { "en": "Storage unit contract", "nl": "Huurcontract opslag" }, "meta": { "en": "Second name · signed", "nl": "Tweede naam · getekend" } }
+      ]
+    },
+    {
+      "num": "02",
+      "type": "scene",
+      "label": { "en": "Scene floor plan", "nl": "Plattegrond plaats delict" },
+      "desc": { "en": "Warehouse and office, with every item logged where it was found.", "nl": "Loods en kantoor, met elk voorwerp genoteerd waar het lag." },
+      "image": "assets/covers/184-scene.jpg",
+      "pins": [
+        { "pin": "A", "text": { "en": "Loading bay — subject’s vehicle, unlocked, keys in ignition.", "nl": "Laadperron — voertuig betrokkene, open, sleutels in het contact." } },
+        { "pin": "B", "text": { "en": "Office — manifest binder, open, four pages torn out.", "nl": "Kantoor — ordner vrachtbrieven, open, vier pagina’s uitgescheurd." } },
+        { "pin": "C", "text": { "en": "Corridor — camera, angle covers the door only.", "nl": "Gang — camera, beeld dekt alleen de deur." } },
+        { "pin": "D", "text": { "en": "Rear exit — fire door propped, alarm disabled at the panel.", "nl": "Achteruitgang — branddeur vastgezet, alarm uitgeschakeld op het paneel." } },
+        { "pin": "E", "text": { "en": "Yard — tyre marks not matching any depot vehicle.", "nl": "Terrein — bandensporen die bij geen enkel bedrijfsvoertuig passen." } }
+      ]
+    },
+    {
+      "num": "03",
+      "type": "forensics",
+      "label": { "en": "Forensic report", "nl": "Forensisch rapport" },
+      "desc": { "en": "Handwriting, prints and the analysis of the altered documents.", "nl": "Handschrift, sporen en de analyse van de gewijzigde documenten." },
+      "rows": [
+        { "ref": "FR-01", "finding": { "en": "Initials on 41 manifests written by a single hand — and not the night manager's own, though they are his initials.", "nl": "Parafen op 41 vrachtbrieven door één hand geschreven — en niet door de nachtchef zelf, terwijl het zijn parafen zijn." }, "method": { "en": "Handwriting", "nl": "Handschrift" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-02", "finding": { "en": "Partial print on binder spine, 11 points of match.", "nl": "Deelspoor op de rug van de ordner, 11 overeenkomsten." }, "method": { "en": "Dactyloscopy", "nl": "Dactyloscopie" }, "status": { "en": "Conclusive", "nl": "Sluitend" }, "conclusive": true },
+        { "ref": "FR-03", "finding": { "en": "Ink on the altered entries differs from depot supply.", "nl": "Inkt van de wijzigingen wijkt af van de voorraad in de loods." }, "method": { "en": "Chromatography", "nl": "Chromatografie" }, "status": { "en": "Indicative", "nl": "Indicatief" } },
+        { "ref": "FR-04", "finding": { "en": "Storage contract signed with the same pen pressure profile.", "nl": "Huurcontract getekend met hetzelfde drukprofiel." }, "method": { "en": "Handwriting", "nl": "Handschrift" }, "status": { "en": "Indicative", "nl": "Indicatief" } },
+        { "ref": "FR-05", "finding": { "en": "No biological material recovered from the vehicle.", "nl": "Geen biologisch materiaal in het voertuig aangetroffen." }, "method": { "en": "Swab", "nl": "Bemonstering" }, "status": { "en": "Negative", "nl": "Negatief" } }
+      ]
+    },
+    {
+      "num": "04",
+      "type": "comms",
+      "label": { "en": "Phone and message logs", "nl": "Telefoon- en berichtenlogs" },
+      "desc": { "en": "Nine weeks of traffic between four numbers.", "nl": "Negen weken verkeer tussen vier nummers." },
+      "messages": [
+        { "who": "H.B.", "time": "21:14", "side": "them", "text": { "en": "audit list is out. you are not on it. neither am I", "nl": "auditlijst is eruit. jij staat er niet op. ik ook niet" } },
+        { "who": { "en": "Night manager", "nl": "Nachtchef" }, "time": "21:31", "side": "subject", "text": { "en": "that is not how it works. they pull names at random", "nl": "zo werkt het niet. ze trekken namen willekeurig" } },
+        { "who": "H.B.", "time": "21:33", "side": "them", "text": { "en": "then stop touching the binder", "nl": "blijf dan van die ordner af" } },
+        { "who": { "en": "Night manager", "nl": "Nachtchef" }, "time": "22:02", "side": "subject", "text": { "en": "I am not the one touching it", "nl": "ik ben niet degene die eraan zit" } },
+        { "who": "H.B.", "time": "22:04", "side": "them", "text": { "en": "do not put that in writing", "nl": "zet dat niet op papier" } },
+        { "who": { "en": "Night manager", "nl": "Nachtchef" }, "time": "23:47", "side": "subject", "text": { "en": "coming to the depot. we finish this tonight", "nl": "ik kom naar de loods. we maken dit vanavond af" } }
+      ],
+      "calls": [
+        { "num": "+31 6 24 88 11 04", "meta": { "en": "9 calls · last 23:51", "nl": "9 gesprekken · laatst 23:51" } },
+        { "num": "+31 6 41 06 77 20", "meta": { "en": "4 calls · last 22:10", "nl": "4 gesprekken · laatst 22:10" } },
+        { "num": { "en": "Depot landline", "nl": "Vaste lijn loods" }, "meta": { "en": "2 calls · last 19:40", "nl": "2 gesprekken · laatst 19:40" } },
+        { "num": { "en": "Unregistered", "nl": "Onbekend nummer" }, "meta": { "en": "1 call · 00:12, 6 sec", "nl": "1 gesprek · 00:12, 6 sec" } }
+      ]
+    },
+    {
+      "num": "05",
+      "type": "suspects",
+      "label": { "en": "Suspect wall", "nl": "Verdachtenwand" },
+      "desc": { "en": "Four people with means, motive or access.", "nl": "Vier mensen met middel, motief of toegang." }
+    },
+    {
+      "num": "06",
+      "type": "database",
+      "label": { "en": "Crime database", "nl": "Crime database" },
+      "desc": { "en": "Search prior records, vehicles, addresses and dockets.", "nl": "Doorzoek antecedenten, voertuigen, adressen en parketnummers." },
+      "rows": [
+        { "code": "NR-2019-882", "title": { "en": "Prior conviction — falsified transport documents", "nl": "Eerdere veroordeling — valselijk opgemaakte vervoersdocumenten" }, "src": { "en": "National register", "nl": "Landelijk register" }, "type": { "en": "Record", "nl": "Antecedent" } },
+        { "code": "VH-44-XT-09", "title": { "en": "Van registered to a dissolved company", "nl": "Bestelbus op naam van een ontbonden vennootschap" }, "src": { "en": "Vehicle register", "nl": "Voertuigregister" }, "type": { "en": "Vehicle", "nl": "Voertuig" } },
+        { "code": "AD-HALDEN-14", "title": { "en": "Storage unit, rented under second name", "nl": "Opslagruimte, gehuurd onder tweede naam" }, "src": { "en": "Property", "nl": "Objecten" }, "type": { "en": "Address", "nl": "Adres" } },
+        { "code": "DK-22-CV-4471", "title": { "en": "Civil claim, insurer vs. Ashfield Freight", "nl": "Civiele vordering, verzekeraar tegen Ashfield Freight" }, "src": { "en": "Court docket", "nl": "Parketnummer" }, "type": { "en": "Docket", "nl": "Dossier" } },
+        { "code": "NR-2021-119", "title": { "en": "Withdrawn report of intimidation", "nl": "Ingetrokken aangifte van bedreiging" }, "src": { "en": "National register", "nl": "Landelijk register" }, "type": { "en": "Record", "nl": "Antecedent" } }
+      ]
+    },
+    {
+      "num": "07",
+      "type": "notepad",
+      "label": { "en": "Your notepad", "nl": "Notitieblok" },
+      "desc": { "en": "Write it down. What you flag stays with the file.", "nl": "Schrijf het op. Wat je markeert blijft bij het dossier." },
+      "pinned": [
+        { "tag": { "en": "Contradiction", "nl": "Tegenstrijdig" }, "text": { "en": "Supervisor says the audit list was random. H.B. says it was published.", "nl": "Dagchef zegt dat de auditlijst willekeurig was. H.B. zegt dat hij gepubliceerd was." } },
+        { "tag": { "en": "Timeline", "nl": "Tijdlijn" }, "text": { "en": "Storage unit rented 6 days before the audit began.", "nl": "Opslagruimte gehuurd 6 dagen voor de audit begon." } },
+        { "tag": { "en": "Open", "nl": "Open" }, "text": { "en": "Who disabled the rear door alarm at the panel?", "nl": "Wie schakelde het alarm van de achterdeur uit op het paneel?" } },
+        { "tag": { "en": "Verified", "nl": "Bevestigd" }, "text": { "en": "Only one hand wrote all 41 sets of initials.", "nl": "Alle 41 parafen zijn door één hand gezet." } }
+      ]
+    }
+  ]
+}
