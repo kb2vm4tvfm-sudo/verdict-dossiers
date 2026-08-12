@@ -1,5 +1,5 @@
-/* Interface copy, EN + NL. Case content is translated inside each case JSON;
-   this file only holds the chrome around it. */
+/* Interface copy, EN + NL + FR. Case content is translated inside each case
+   JSON; this file only holds the chrome around it. */
 (function (global) {
   'use strict';
 
@@ -224,27 +224,129 @@
       notFound: 'Dat dossier bestaat niet.',
       loadError: 'Het dossier kon niet worden geladen. Controleer je verbinding en probeer opnieuw.',
       loading: 'Dossier openen…'
+    },
+
+    fr: {
+      dossiersWord: 'Dossiers d\'enquête',
+      navDossiers: 'Dossiers',
+      navHow: 'Comment ça marche',
+      footerNote: 'Dossiers gratuits · pas de compte, pas de paiement ·',
+      disclaimer: 'Les affaires fictives sont des œuvres de fiction. Les noms, personnages, entreprises et événements sont inventés, les photographies sont générées par IA, et toute ressemblance avec des personnes réelles, vivantes ou décédées, serait fortuite.',
+      viewDesktop: 'Version bureau',
+      viewMobile: 'Version mobile',
+      viewDesktopAria: 'Passer à la version bureau',
+      viewMobileAria: 'Revenir à la version mobile',
+      indexEyebrow: 'Dossiers gratuits · Jouez directement dans votre navigateur',
+      indexTitle: 'Soixante secondes, c\'est la bande-annonce. Voici le dossier.',
+      indexIntro: 'Chaque dossier est le dossier de travail complet d\'une affaire parue sur le fil : le rapport, les lieux, l\'expertise, les relevés téléphoniques. Lisez-le, désignez un suspect, obtenez la réponse sur-le-champ.',
+      factDossiers: 'Dossiers en ligne',
+      factRuntime: 'Par affaire',
+      factDocuments: 'Documents par dossier',
+      allFiles: 'Tous les dossiers',
+      filterAll: 'Tout',
+      filterReal: 'Affaires réelles',
+      filterConstructed: 'Fictives',
+      filterNew: 'Nouveau',
+      noMatches: 'Ce filtre ne contient encore aucun dossier.',
+      inProgress: 'En cours',
+      solved: 'Résolu',
+      coverSlot: 'couverture — 4:5',
+      keyArtSlot: 'illustration principale — 16:9',
+      mapSlot: 'plan des lieux',
+      photoSlot: 'photo',
+      back: '← Retour',
+      backToFile: '← Retour au dossier',
+      whatsInside: 'Que contient ce dossier ?',
+      gateEyebrow: 'Accès libre',
+      gateTitle: 'Suivez le compte pour ouvrir le dossier',
+      gateBody: 'Les dossiers restent gratuits. C\'est le suivi du compte qui les incite à revenir — c\'est là tout le secret du métier.',
+      gateFollow: 'Suivre @verdictin60',
+      gateOpen: 'Je suis le compte — ouvrir le dossier',
+      gateNote: 'Pas de paiement, pas de compte, pas d\'adresse e-mail. Le dossier s\'ouvre dans ce navigateur.',
+      openFile: 'Ouvrir le dossier',
+      resume: 'Reprendre le dossier',
+      progress: 'Avancement',
+      accuse: 'Désigner un suspect',
+      document: 'Document',
+      sealed: 'Scellé',
+      tagOpen: 'ouvert',
+      tagRead: 'lu',
+      tagSealed: 'scellé',
+      lockedEyebrow: 'Scellé',
+      lockedTitle: 'Pas encore disponible',
+      lockedNote: 'Commencez par traiter les documents qui sont ouverts. À mesure que vous les lisez, le suivant s\'affiche.',
+      attachments: 'Pièces jointes',
+      callLog: 'Historique des appels',
+      colRef: 'Référence',
+      colFinding: 'Constatation',
+      colMethod: 'Méthode',
+      colStatus: 'Statut',
+      searchPlaceholder: 'nom, numéro d\'immatriculation, numéro de dossier, adresse…',
+      search: 'Rechercher',
+      noResults: 'Aucune entrée de la base de données ne correspond à cela.',
+      notepadHint: 'Vos notes — enregistrées sur cet appareil',
+      notepadPlaceholder: 'Qu\'est-ce qui ne colle pas ?',
+      notesSaved: 'Enregistré sur cet appareil',
+      notesNotSaved: 'La sauvegarde est bloquée — les notes ne seront pas conservées après un rafraîchissement de la page',
+      pinnedFindings: 'Signalés',
+      accuseIntro: 'Un seul nom. Le dossier contient tout ce dont vous avez besoin, et la réponse s\'affiche immédiatement.',
+      rightEyebrow: 'Correct',
+      wrongEyebrow: 'Incorrect',
+      nextCase: 'Dossier suivant',
+      shareResult: 'Partager le résultat',
+      shareCopied: 'Lien copié',
+      shareCard: 'Partager une carte',
+      shareBuilding: 'Création de la carte…',
+      shareSaved: 'Carte enregistrée',
+      tryAgain: 'Modifier ma réponse',
+      rankLabel: 'Votre grade',
+      rankSolvedOne: 'affaire résolue',
+      rankSolvedMany: 'affaires résolues',
+      rankNext: 'avant %s',
+      rankTop: 'grade le plus élevé',
+      cardSolved: 'Affaire résolue',
+      cardUnsolved: 'Saurez-vous résoudre l\'affaire ?',
+      cardCta: 'Dossiers d\'enquête gratuits',
+      howEyebrow: 'Comment ça marche',
+      howTitle: 'Lisez le dossier. Désignez un suspect.',
+      howIntro: 'Pas besoin de se connecter, pas d\'achat, pas besoin de meneur de jeu. Tout se passe dans le navigateur, que vous soyez seul ou avec trois autres personnes qui regardent par-dessus votre épaule.',
+      steps: [
+        ['01', 'Choisissez un dossier', 'Tous les dossiers issus du flux, qu\'il s\'agisse d\'une simple fraude ou d\'un dossier qui n\'a jamais été classé.'],
+        ['02', 'Suivez pour ouvrir', 'Un seul geste sur Instagram. C\'est tout ce qui vous est demandé.'],
+        ['03', 'Parcourez-le', 'Les documents se déverrouillent au fur et à mesure, de sorte que le dossier se dévoile dans l\'ordre dans lequel il a été constitué.'],
+        ['04', 'Désignez un suspect', 'Un nom, une réponse, donnée sur-le-champ avec le raisonnement.']
+      ],
+      faq: [
+        ['S\'agit-il de cas réels ?', 'Pas pour l\'instant. Chaque dossier présenté ici est une fiction — rédigé pour ce site et portant la mention « Fictive » sur sa fiche. Certains reprennent la structure d\'une affaire avérée, mais les personnages, les noms, les lieux et les photographies qui y figurent sont inventés. Si un dossier s\'inspirant d\'une affaire réelle et avérée venait à être publié ici, il porterait la mention « Réelle » et resterait fidèle aux faits.'],
+        ['D\'où proviennent ces photos ?', 'Ces images sont générées, et non photographiées. Aucun des personnages figurant sur un mur des suspects n\'est une personne réelle, et aucune image présentée ici ne représente un lieu ou un document réel.'],
+        ['Dois-je payer ?', 'Non. Les dossiers sont gratuits et le resteront.'],
+        ['On peut jouer ensemble ?', 'Oui — un seul écran, jusqu\'à quatre joueurs. Il n\'y a pas d\'ordre de tour.'],
+        ['Et si je me trompais ?', 'Vous comprenez le raisonnement, le dossier reste ouvert et vous pouvez modifier votre réponse. Une erreur de nom ne vous coûte rien : votre grade ne prend en compte que les affaires que vous résolvez.']
+      ],
+      notFound: 'Ce dossier n\'existe pas.',
+      loadError: 'Le dossier n\'a pas pu être chargé. Vérifiez votre connexion et réessayez.',
+      loading: 'Ouverture du dossier…'
     }
   };
 
   var BADGES = {
-    real:        { en: 'Real',        nl: 'Echt' },
-    constructed: { en: 'Constructed', nl: 'Geconstrueerd' },
-    open:        { en: 'Open',        nl: 'Open' },
-    new:         { en: 'New',         nl: 'Nieuw' }
+    real:        { en: 'Real',        nl: 'Echt',           fr: 'Réelle' },
+    constructed: { en: 'Constructed', nl: 'Geconstrueerd',  fr: 'Fictive' },
+    open:        { en: 'Open',        nl: 'Open',           fr: 'Ouverte' },
+    new:         { en: 'New',         nl: 'Nieuw',          fr: 'Nouveau' }
   };
 
-  var LEVEL = { en: 'Level', nl: 'Niveau' };
+  var LEVEL = { en: 'Level', nl: 'Niveau', fr: 'Niveau' };
 
   /* Rank ladder, lowest first. `at` is the number of cases solved that earns
      the rank. Cosmetic only — nothing in the app gates on it. Thresholds stay
      reachable as the library grows; add a tier rather than moving these. */
   var RANKS = [
-    { at: 0,  name: { en: 'Rookie',           nl: 'Aspirant' } },
-    { at: 1,  name: { en: 'Detective',        nl: 'Rechercheur' } },
-    { at: 3,  name: { en: 'Senior Detective', nl: 'Senior rechercheur' } },
-    { at: 6,  name: { en: 'Inspector',        nl: 'Inspecteur' } },
-    { at: 10, name: { en: 'Chief Inspector',  nl: 'Hoofdinspecteur' } }
+    { at: 0,  name: { en: 'Rookie',           nl: 'Aspirant',           fr: 'Débutant' } },
+    { at: 1,  name: { en: 'Detective',        nl: 'Rechercheur',        fr: 'Enquêteur' } },
+    { at: 3,  name: { en: 'Senior Detective', nl: 'Senior rechercheur', fr: 'Enquêteur principal' } },
+    { at: 6,  name: { en: 'Inspector',        nl: 'Inspecteur',         fr: 'Inspecteur' } },
+    { at: 10, name: { en: 'Chief Inspector',  nl: 'Hoofdinspecteur',    fr: 'Inspecteur en chef' } }
   ];
 
   global.I18N = {
@@ -252,9 +354,9 @@
     badges: BADGES,
     level: LEVEL,
     ranks: RANKS,
-    langs: ['en', 'nl'],
+    langs: ['en', 'nl', 'fr'],
 
-    /* Pick the right side of a {en, nl} pair. Plain strings pass through, so a
+    /* Pick the right side of an {en, nl, fr} set. Plain strings pass through, so a
        case that is only written in one language still renders. */
     pick: function (value, lang) {
       if (value == null) return '';
