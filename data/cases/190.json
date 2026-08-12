@@ -85,18 +85,18 @@
       "role": {
         "en": "Second guard",
         "nl": "Tweede bewaker",
-        "fr": "Second gardien"
+        "fr": "Seconde gardienne"
       },
       "note": {
         "en": "Restrained in the basement for the full eighty minutes. Found by the morning shift.",
         "nl": "Tachtig minuten lang vastgebonden in de kelder. Gevonden door de ochtendploeg.",
-        "fr": "Il a été retenu au sous-sol pendant les quatre-vingts minutes. Il a été retrouvé par l'équipe du matin."
+        "fr": "Retenue au sous-sol pendant les quatre-vingts minutes. Retrouvée par l'équipe du matin."
       },
       "photo": "assets/covers/190-suspect-2.jpg",
       "cleared": {
-        "en": "He was found exactly where the intruders left him, restrained with tape from the gallery's own supply closet — tape neither guard had reason to carry himself. Nothing about his position, his statement, or the timeline puts him anywhere near the console.",
-        "nl": "Hij werd precies gevonden waar de indringers hem achterlieten, vastgebonden met tape uit de eigen voorraadkast van de galerie — tape die geen van beide bewakers zelf bij zich had. Niets in zijn positie, verklaring of de tijdlijn plaatst hem in de buurt van de console.",
-        "fr": "On l'a retrouvé exactement là où les intrus l'avaient laissé, ligoté avec du ruban adhésif provenant du placard de rangement de la galerie — un ruban qu'aucun des deux gardes n'avait de raison d'avoir sur lui. Rien dans sa position, son témoignage ou la chronologie des faits ne le place à proximité de la console."
+        "en": "She was found exactly where the intruders left her, restrained with tape from the gallery's own supply closet — tape neither guard had reason to be carrying. Nothing about her position, her statement, or the timeline puts her anywhere near the console.",
+        "nl": "Zij werd precies gevonden waar de indringers haar achterlieten, vastgebonden met tape uit de eigen voorraadkast van de galerie — tape die geen van beide bewakers zelf bij zich had. Niets in haar positie, verklaring of de tijdlijn plaatst haar in de buurt van de console.",
+        "fr": "On l'a retrouvée exactement là où les intrus l'avaient laissée, ligotée avec du ruban adhésif provenant du placard de rangement de la galerie — un ruban qu'aucun des deux gardiens n'avait de raison d'avoir sur lui. Rien dans sa position, son témoignage ou la chronologie des faits ne la place à proximité de la console."
       }
     },
     {
@@ -118,18 +118,18 @@
       "role": {
         "en": "Local dealer",
         "nl": "Lokale handelaar",
-        "fr": "Revendeur local"
+        "fr": "Revendeuse locale"
       },
       "note": {
         "en": "Has handled unprovenanced pieces before. Contacted the gallery twice in the prior month.",
         "nl": "Handelde eerder in stukken zonder herkomst. Nam de maand ervoor twee keer contact op met de galerie.",
-        "fr": "Il a déjà eu affaire à des œuvres sans provenance. Il a contacté la galerie deux fois le mois dernier."
+        "fr": "A déjà traité des œuvres sans provenance. A contacté la galerie deux fois le mois précédent."
       },
       "photo": "assets/covers/190-suspect-4.jpg",
       "cleared": {
-        "en": "He contacted the gallery to try to buy two of the pieces legitimately — the correspondence file has his written offer, declined a week before the break-in. Wanting to buy something openly is a strange way to plan taking it.",
-        "nl": "Hij nam contact op om twee stukken legitiem te kopen — het correspondentiedossier bevat zijn schriftelijke bod, een week voor de inbraak afgewezen. Iets openlijk willen kopen is een vreemde manier om het te plannen te stelen.",
-        "fr": "Il a contacté la galerie pour essayer d'acheter deux des œuvres en toute légalité — le dossier de correspondance contient son offre écrite, qui a été refusée une semaine avant le cambriolage. Vouloir acheter quelque chose au grand jour, c'est une drôle de façon de s'organiser pour le voler."
+        "en": "She contacted the gallery to try to buy two of the pieces legitimately — the correspondence file has her written offer, declined a week before the break-in. Wanting to buy something openly is a strange way to plan taking it.",
+        "nl": "Zij nam contact op om twee stukken legitiem te kopen — het correspondentiedossier bevat haar schriftelijke bod, een week voor de inbraak afgewezen. Iets openlijk willen kopen is een vreemde manier om het te plannen te stelen.",
+        "fr": "Elle a contacté la galerie pour essayer d'acheter deux des œuvres en toute légalité — le dossier de correspondance contient son offre écrite, refusée une semaine avant le cambriolage. Vouloir acheter quelque chose au grand jour, c'est une drôle de façon de s'organiser pour le voler."
       }
     }
   ],
@@ -315,7 +315,7 @@
           "text": {
             "en": "Basement corridor — K. Reyes found restrained, 8:02 a.m.",
             "nl": "Kelder­gang — K. Reyes vastgebonden aangetroffen, 8:02 uur.",
-            "fr": "Couloir du sous-sol — K. Reyes retrouvé ligoté, 8 h 02."
+            "fr": "Couloir du sous-sol — K. Reyes retrouvée ligotée, 8 h 02."
           }
         },
         {
@@ -483,9 +483,9 @@
             "fr": "Contradiction"
           },
           "text": {
-            "en": "Kessler asked about insurance to buy in, not to plan a theft — his offer is on file, declined.",
-            "nl": "Kessler vroeg naar de verzekering om te kopen, niet om te stelen — zijn bod staat in het dossier, afgewezen.",
-            "fr": "Kessler a posé des questions sur une assurance pour acheter un contrat, pas pour organiser un vol — son offre est dans le dossier, elle a été refusée."
+            "en": "Kessler asked about insurance to buy in, not to plan a theft — her offer is on file, declined.",
+            "nl": "Kessler vroeg naar de verzekering om te kopen, niet om te stelen — haar bod staat in het dossier, afgewezen.",
+            "fr": "Kessler s'est renseignée sur l'assurance pour acheter, pas pour voler — son offre figure au dossier, refusée."
           }
         },
         {

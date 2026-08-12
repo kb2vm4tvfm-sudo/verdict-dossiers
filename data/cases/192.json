@@ -85,7 +85,7 @@
       "role": {
         "en": "Postal contractor",
         "nl": "Postbezorger",
-        "fr": "Sous-traitant postal"
+        "fr": "Sous-traitante postale"
       },
       "note": {
         "en": "Route covered every collection point used to mail the letters.",
@@ -94,9 +94,9 @@
       },
       "photo": "assets/covers/192-suspect-2.jpg",
       "cleared": {
-        "en": "Every postal contractor on that route handled thousands of pieces of mail that week; nothing isolates these five envelopes to him specifically, and he was on documented leave for two of the five mailing dates.",
-        "nl": "Elke postbezorger op die route verwerkte die week duizenden poststukken; niets isoleert deze vijf enveloppen specifiek voor hem, en hij had aantoonbaar verlof op twee van de vijf verzenddata.",
-        "fr": "Chaque postier de cette tournée a traité des milliers d'envois cette semaine-là ; rien ne permet de penser que ces cinq enveloppes lui aient été spécifiquement confiées, et il était en congé justifié pour deux des cinq dates d'envoi."
+        "en": "Every postal contractor on that route handled thousands of pieces of mail that week; nothing isolates these five envelopes to her specifically, and she was on documented leave for two of the five mailing dates.",
+        "nl": "Elke postbezorger op die route verwerkte die week duizenden poststukken; niets isoleert deze vijf enveloppen specifiek voor haar, en zij had aantoonbaar verlof op twee van de vijf verzenddata.",
+        "fr": "Chaque postier de cette tournée a traité des milliers d'envois cette semaine-là ; rien ne relie ces cinq enveloppes à elle en particulier, et elle était en congé justifié pour deux des cinq dates d'envoi."
       }
     },
     {
@@ -118,18 +118,18 @@
       "role": {
         "en": "Former Halbrook researcher",
         "nl": "Voormalig onderzoeker Halbrook",
-        "fr": "Ancien chercheur à Halbrook"
+        "fr": "Ancienne chercheuse à Halbrook"
       },
       "note": {
         "en": "Denied grant renewal fourteen months before the letters; posted publicly about it at the time.",
-        "nl": "Kreeg veertien maanden voor de brieven zijn subsidie niet verlengd; deed daar destijds publiekelijk uitspraken over.",
-        "fr": "On m'a refusé le renouvellement de ma bourse quatorze mois avant ces lettres ; j'en avais parlé publiquement à l'époque."
+        "nl": "Kreeg veertien maanden voor de brieven haar subsidie niet verlengd; deed daar destijds publiekelijk uitspraken over.",
+        "fr": "Renouvellement de bourse refusé quatorze mois avant les lettres ; s'en est plainte publiquement à l'époque."
       },
       "photo": "assets/covers/192-suspect-4.jpg",
       "cleared": {
-        "en": "His grievance is real and on the record, loudly — but he left the country nine months before the first letter was mailed, and border records place him abroad for the entire window. Motive without opportunity.",
-        "nl": "Zijn grief is echt en luid gedocumenteerd — maar hij verliet negen maanden voor de eerste brief het land, en grensgegevens plaatsen hem de hele periode in het buitenland. Motief zonder gelegenheid.",
-        "fr": "Son grief est bien réel et a été clairement consigné — mais il a quitté le pays neuf mois avant que la première lettre ne soit postée, et les registres des frontières indiquent qu’il était à l’étranger pendant toute cette période. Un mobile, mais pas l’occasion."
+        "en": "Her grievance is real and on the record, loudly — but she left the country nine months before the first letter was mailed, and border records place her abroad for the entire window. Motive without opportunity.",
+        "nl": "Haar grief is echt en luid gedocumenteerd — maar zij verliet negen maanden voor de eerste brief het land, en grensgegevens plaatsen haar de hele periode in het buitenland. Motief zonder gelegenheid.",
+        "fr": "Son grief est bien réel et a été clairement consigné — mais elle a quitté le pays neuf mois avant que la première lettre ne soit postée, et les registres des frontières indiquent qu'elle était à l'étranger pendant toute cette période. Un mobile, mais pas l'occasion."
       }
     }
   ],
