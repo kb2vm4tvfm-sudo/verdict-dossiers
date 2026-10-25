@@ -1,64 +1,77 @@
 {
-  "_readme": "Copy this file to <id>.json, fill it in, then add a matching entry to data/manifest.json. Every player-facing string may be either a plain string or an {\"en\": ..., \"nl\": ...} pair. Delete the pieces you do not need — the sidebar, the progress bar and the unlock order all follow this array.",
+  "_readme": "Copy this file to <id>.json, fill it in, then add a matching entry to data/manifest.json. Every player-facing string may be either a plain string or an {\"en\": ..., \"nl\": ..., \"fr\": ...} pair. Delete the pieces you do not need — the sidebar, the progress bar and the unlock order all follow this array.",
+
+  "_refs": "Any row in any document may carry a \"ref\" (FR-01, DG-04, IV-02 — the prefix is yours to choose, it only has to be unique inside the case). Those references are the case's currency: the player cites them to rule a suspect out and to disprove a statement in an interview. A reference only becomes citable once the player has actually read the document it sits in, so a sealed file is never proof. A document with no refs is still readable, it just cannot be cited.",
+
+  "_verdict": "Every innocent suspect needs a \"clearedBy\" array listing the refs that rule them out — citing any one of them is enough. The culprit gets \"clearedBy\": [], which is what makes them impossible to clear. Naming a suspect without clearing anyone is still allowed and still a gamble; clearing is how the player earns the answer instead of guessing it.",
 
   "keyArt": null,
-  "stamp": { "en": "Place · date · confidential", "nl": "Plaats · datum · vertrouwelijk" },
+  "stamp": { "en": "Place · date · confidential", "nl": "Plaats · datum · vertrouwelijk", "fr": "Lieu · date · confidentiel" },
 
-  "synopsis": { "en": "", "nl": "" },
+  "synopsis": { "en": "", "nl": "", "fr": "" },
 
   "detailMeta": [
-    { "label": { "en": "Runtime", "nl": "Speelduur" }, "value": { "en": "60 minutes", "nl": "60 minuten" } },
-    { "label": { "en": "Players", "nl": "Spelers" }, "value": "1–4" },
-    { "label": { "en": "Documents", "nl": "Stukken" }, "value": "7" },
-    { "label": { "en": "Case status", "nl": "Status zaak" }, "value": { "en": "", "nl": "" } }
+    { "label": { "en": "Runtime", "nl": "Speelduur", "fr": "Durée" }, "value": { "en": "60 minutes", "nl": "60 minuten", "fr": "60 minutes" } },
+    { "label": { "en": "Players", "nl": "Spelers", "fr": "Joueurs" }, "value": "1–4" },
+    { "label": { "en": "Documents", "nl": "Stukken", "fr": "Pièces" }, "value": "8" },
+    { "label": { "en": "Case status", "nl": "Status zaak", "fr": "Statut du dossier" }, "value": { "en": "", "nl": "", "fr": "" } }
   ],
 
   "suspects": [
     {
       "name": "",
-      "role": { "en": "", "nl": "" },
-      "note": { "en": "", "nl": "" },
+      "role": { "en": "", "nl": "", "fr": "" },
+      "note": { "en": "", "nl": "", "fr": "" },
       "photo": null,
-      "cleared": { "en": "Why this person is ruled out. Optional — falls back to solution.wrong.", "nl": "" }
+      "clearedBy": ["FR-01"],
+      "cleared": { "en": "Why this person is ruled out — shown once the player clears them. Falls back to solution.wrong.", "nl": "", "fr": "" }
+    },
+    {
+      "_comment": "The culprit. An empty clearedBy is what makes them impossible to rule out.",
+      "name": "",
+      "role": { "en": "", "nl": "", "fr": "" },
+      "note": { "en": "", "nl": "", "fr": "" },
+      "photo": null,
+      "clearedBy": []
     }
   ],
 
   "solution": {
-    "culprit": 0,
-    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen." },
-    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader." },
-    "correct": { "en": "", "nl": "" },
-    "wrong": { "en": "", "nl": "" }
+    "culprit": 1,
+    "correctTitle": { "en": "You named the right person.", "nl": "Je hebt de juiste persoon aangewezen.", "fr": "Vous avez désigné la bonne personne." },
+    "wrongTitle": { "en": "That is not who did it.", "nl": "Dit is niet de dader.", "fr": "Ce n'est pas le coupable." },
+    "correct": { "en": "", "nl": "", "fr": "" },
+    "wrong": { "en": "", "nl": "", "fr": "" }
   },
 
   "pieces": [
     {
       "num": "01",
       "type": "report",
-      "label": { "en": "Police report", "nl": "Proces-verbaal" },
-      "desc": { "en": "", "nl": "" },
-      "blocks": [{ "head": { "en": "", "nl": "" }, "text": { "en": "", "nl": "" } }],
-      "attachments": [{ "title": { "en": "", "nl": "" }, "meta": { "en": "", "nl": "" } }]
+      "label": { "en": "Police report", "nl": "Proces-verbaal", "fr": "Procès-verbal" },
+      "desc": { "en": "", "nl": "", "fr": "" },
+      "blocks": [{ "head": { "en": "", "nl": "", "fr": "" }, "text": { "en": "", "nl": "", "fr": "" } }],
+      "attachments": [{ "title": { "en": "", "nl": "", "fr": "" }, "meta": { "en": "", "nl": "", "fr": "" } }]
     },
     {
       "num": "02",
       "type": "scene",
-      "label": { "en": "Scene floor plan", "nl": "Plattegrond plaats delict" },
-      "desc": { "en": "", "nl": "" },
+      "label": { "en": "Scene floor plan", "nl": "Plattegrond plaats delict", "fr": "Plan des lieux" },
+      "desc": { "en": "", "nl": "", "fr": "" },
       "image": "assets/covers/<id>-scene.jpg",
-      "pins": [{ "pin": "A", "text": { "en": "", "nl": "" } }]
+      "pins": [{ "pin": "A", "ref": "SC-01", "text": { "en": "", "nl": "", "fr": "" } }]
     },
     {
       "num": "03",
       "type": "forensics",
-      "label": { "en": "Forensic report", "nl": "Forensisch rapport" },
-      "desc": { "en": "", "nl": "" },
+      "label": { "en": "Forensic report", "nl": "Forensisch rapport", "fr": "Rapport médico-légal" },
+      "desc": { "en": "", "nl": "", "fr": "" },
       "rows": [
         {
           "ref": "FR-01",
-          "finding": { "en": "", "nl": "" },
-          "method": { "en": "", "nl": "" },
-          "status": { "en": "Conclusive", "nl": "Sluitend" },
+          "finding": { "en": "", "nl": "", "fr": "" },
+          "method": { "en": "", "nl": "", "fr": "" },
+          "status": { "en": "Conclusive", "nl": "Sluitend", "fr": "Concluant" },
           "conclusive": true
         }
       ]
@@ -66,35 +79,63 @@
     {
       "num": "04",
       "type": "comms",
-      "label": { "en": "Phone and message logs", "nl": "Telefoon- en berichtenlogs" },
-      "desc": { "en": "", "nl": "" },
+      "label": { "en": "Phone and message logs", "nl": "Telefoon- en berichtenlogs", "fr": "Relevés téléphoniques" },
+      "desc": { "en": "", "nl": "", "fr": "" },
       "messages": [
-        { "who": "", "time": "00:00", "side": "them", "text": { "en": "", "nl": "" } },
-        { "who": "", "time": "00:00", "side": "subject", "text": { "en": "", "nl": "" } }
+        { "who": "", "time": "00:00", "side": "them", "ref": "DG-01", "text": { "en": "", "nl": "", "fr": "" } },
+        { "who": "", "time": "00:00", "side": "subject", "text": { "en": "", "nl": "", "fr": "" } }
       ],
-      "calls": [{ "num": "", "meta": { "en": "", "nl": "" } }]
+      "calls": [{ "num": "", "ref": "DG-02", "meta": { "en": "", "nl": "", "fr": "" } }]
     },
     {
       "num": "05",
       "type": "suspects",
-      "label": { "en": "Suspect wall", "nl": "Verdachtenwand" },
-      "desc": { "en": "", "nl": "" }
+      "label": { "en": "Suspect wall", "nl": "Verdachtenwand", "fr": "Mur des suspects" },
+      "desc": { "en": "", "nl": "", "fr": "" }
     },
     {
       "num": "06",
       "type": "database",
-      "label": { "en": "Crime database", "nl": "Crime database" },
-      "desc": { "en": "", "nl": "" },
+      "label": { "en": "Crime database", "nl": "Crime database", "fr": "Base de données" },
+      "desc": { "en": "", "nl": "", "fr": "" },
       "rows": [
-        { "code": "", "title": { "en": "", "nl": "" }, "src": { "en": "", "nl": "" }, "type": { "en": "", "nl": "" } }
+        { "code": "", "ref": "DB-01", "title": { "en": "", "nl": "", "fr": "" }, "src": { "en": "", "nl": "", "fr": "" }, "type": { "en": "", "nl": "", "fr": "" } }
       ]
     },
     {
       "num": "07",
+      "type": "interview",
+      "label": { "en": "Interviews", "nl": "Verhoren", "fr": "Interrogatoires" },
+      "desc": { "en": "", "nl": "", "fr": "" },
+      "_comment": "A line with \"contradictedBy\" can be disproven by citing that ref; the \"tell\" is what the player is shown when they get it right. Lines without contradictedBy are just testimony. A statement can never be disproven by the interview it sits in.",
+      "sessions": [
+        {
+          "subject": "",
+          "meta": { "en": "Interview room · 00:00 · lawyer present", "nl": "Verhoorkamer · 00:00 · advocaat aanwezig", "fr": "Salle d'interrogatoire · 00:00 · avocat présent" },
+          "lines": [
+            {
+              "time": "00:00",
+              "ref": "IV-01",
+              "q": { "en": "", "nl": "", "fr": "" },
+              "a": { "en": "", "nl": "", "fr": "" },
+              "contradictedBy": "DG-01",
+              "tell": { "en": "What the cited document proves the statement cannot be true.", "nl": "", "fr": "" }
+            },
+            {
+              "time": "00:00",
+              "q": { "en": "", "nl": "", "fr": "" },
+              "a": { "en": "", "nl": "", "fr": "" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": "08",
       "type": "notepad",
-      "label": { "en": "Your notepad", "nl": "Notitieblok" },
-      "desc": { "en": "", "nl": "" },
-      "pinned": [{ "tag": { "en": "", "nl": "" }, "text": { "en": "", "nl": "" } }]
+      "label": { "en": "Your notepad", "nl": "Notitieblok", "fr": "Bloc-notes" },
+      "desc": { "en": "", "nl": "", "fr": "" },
+      "pinned": [{ "tag": { "en": "", "nl": "", "fr": "" }, "text": { "en": "", "nl": "", "fr": "" } }]
     }
   ]
 }

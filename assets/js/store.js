@@ -52,7 +52,16 @@
     if (!Array.isArray(c.seen) || !c.seen.length) c.seen = [0];
     if (typeof c.notes !== 'string') c.notes = '';
     if (c.correct === undefined) c.correct = null;   // files answered before rank existed
+    // Files started before elimination existed carry neither map.
+    if (!c.cleared || typeof c.cleared !== 'object') c.cleared = {};
+    if (!c.flagged || typeof c.flagged !== 'object') c.flagged = {};
     return c;
+  }
+
+  function copy(obj) {
+    var out = {};
+    Object.keys(obj).forEach(function (k) { out[k] = obj[k]; });
+    return out;
   }
 
   var Store = {
@@ -72,7 +81,10 @@
     getCase: function (id) {
       var s = read();
       var c = caseState(s, id);
-      return { seen: c.seen.slice(), notes: c.notes, accused: c.accused, correct: c.correct };
+      return {
+        seen: c.seen.slice(), notes: c.notes, accused: c.accused, correct: c.correct,
+        cleared: copy(c.cleared), flagged: copy(c.flagged)
+      };
     },
 
     markSeen: function (id, index) {
@@ -87,6 +99,28 @@
       write(s);
     },
 
+    /* A suspect ruled out, and the reference the player cited to do it. The
+       citation is kept so the verdict screen can show its own working. */
+    setCleared: function (id, index, ref) {
+      var s = read();
+      caseState(s, id).cleared[String(index)] = ref;
+      write(s);
+    },
+
+    unclear: function (id, index) {
+      var s = read();
+      delete caseState(s, id).cleared[String(index)];
+      write(s);
+    },
+
+    /* A statement in an interview the player has disproven, keyed
+       "<piece num>:<line index>", with the document that disproves it. */
+    setFlagged: function (id, key, ref) {
+      var s = read();
+      caseState(s, id).flagged[key] = ref;
+      write(s);
+    },
+
     /* `correct` is passed in because only the case file knows the culprit;
        storing it here is what lets the index and the rank read a result
        without loading every case JSON. */
@@ -95,6 +129,16 @@
       var c = caseState(s, id);
       c.accused = index;
       c.correct = (index === null || index === undefined) ? null : correct === true;
+      write(s);
+    },
+
+    /* Reopen the verdict without throwing away the reading progress. */
+    resetVerdict: function (id) {
+      var s = read();
+      var c = caseState(s, id);
+      c.accused = null;
+      c.correct = null;
+      c.cleared = {};
       write(s);
     },
 

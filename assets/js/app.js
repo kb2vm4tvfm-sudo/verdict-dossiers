@@ -635,6 +635,62 @@
           ]);
         }))
       ]);
+    },
+
+    /* The one document the player argues with. A statement that the rest of
+       the file contradicts can be disproven by citing the document that
+       breaks it — a lie that can be shown to be a lie is worth as much as a
+       confession, and the interview is where the case is usually won. */
+    interview: function (kase, p) {
+      var state = Store.getCase(kase.id);
+      // A statement cannot be disproven by the interview it sits in.
+      var refs = citableRefs(kase, state, p.num);
+
+      return h('div', { 'class': 'interview' }, (p.sessions || []).map(function (session, si) {
+        var lines = (session.lines || []).map(function (line, li) {
+          var key = p.num + ':' + si + ':' + li;
+          var row = h('div', {});
+
+          function paint() {
+            clear(row);
+            var citedRef = state.flagged[key];
+            row.className = 'iv-line' + (citedRef ? ' disproved' : '');
+
+            row.appendChild(h('div', { 'class': 'iv-q', text: L(line.q) }));
+            row.appendChild(h('div', { 'class': 'iv-a' }, [
+              line.time && h('span', { 'class': 'iv-time', text: L(line.time) }),
+              h('span', { text: L(line.a) })
+            ]));
+
+            if (!line.contradictedBy) return;
+
+            if (citedRef) {
+              row.appendChild(h('div', { 'class': 'iv-tell' }, [
+                h('span', { 'class': 'iv-tell-ref', text: citedRef }),
+                h('span', { text: L(line.tell) })
+              ]));
+              return;
+            }
+
+            row.appendChild(citeControl(refs, t('flagStatement'), function (ref, say) {
+              if (ref !== line.contradictedBy) { say(t('flagWrong')); return; }
+              Store.setFlagged(kase.id, key, ref);
+              state = Store.getCase(kase.id);
+              paint();
+            }));
+          }
+
+          paint();
+          return row;
+        });
+
+        return h('div', { 'class': 'iv-session' }, [
+          h('div', { 'class': 'iv-head' }, [
+            h('div', { 'class': 'iv-subject', text: L(session.subject) }),
+            h('div', { 'class': 'iv-meta', text: L(session.meta) })
+          ])
+        ].concat(lines));
+      }));
     }
   };
 
@@ -642,6 +698,75 @@
     var fn = RENDERERS[piece.type];
     if (!fn) return h('div', { 'class': 'empty', text: 'Unknown document type: ' + piece.type });
     return fn(kase, piece);
+  }
+
+  /* ── Citations ────────────────────────────────────────────────────────── */
+
+  /* Any row in a document can carry a `ref`; those references are what the
+     player cites, both to disprove a statement and to rule a suspect out.
+     Only documents already read are citable — a sealed file is not proof. */
+  function rowsOf(piece) {
+    var rows = []
+      .concat(piece.rows || [])
+      .concat(piece.messages || [])
+      .concat(piece.calls || [])
+      .concat(piece.pins || [])
+      .concat(piece.entries || []);
+    (piece.sessions || []).forEach(function (s) { rows = rows.concat(s.lines || []); });
+    return rows;
+  }
+
+  function citableRefs(kase, state, excludeNum) {
+    var out = [];
+    kase.pieces.forEach(function (piece, index) {
+      if (state.seen.indexOf(index) === -1) return;
+      if (excludeNum && piece.num === excludeNum) return;
+      rowsOf(piece).forEach(function (row) {
+        if (!row || !row.ref) return;
+        out.push({
+          ref: row.ref,
+          label: L(piece.label),
+          text: L(row.finding || row.text || row.meta || row.a || row.title || '')
+        });
+      });
+    });
+    return out;
+  }
+
+  function trim(text, max) {
+    return text.length > max ? text.slice(0, max - 1) + '…' : text;
+  }
+
+  /* Pick a reference, submit it, be told whether it carries. The control
+     reports failure in place rather than re-rendering, so a wrong citation
+     costs the player nothing but the attempt. */
+  function citeControl(refs, label, onPick) {
+    var wrap = h('div', { 'class': 'cite' });
+
+    if (!refs.length) {
+      wrap.appendChild(h('div', { 'class': 'cite-note', text: t('noRefsYet') }));
+      return wrap;
+    }
+
+    var note = h('div', { 'class': 'cite-note' });
+    var select = h('select', { 'class': 'cite-select', 'aria-label': t('citePrompt') },
+      [h('option', { value: '', text: t('citePrompt') })].concat(refs.map(function (r) {
+        var tail = r.text ? ' — ' + trim(r.text, 56) : '';
+        return h('option', { value: r.ref, text: r.ref + ' · ' + r.label + tail });
+      })));
+
+    var go = h('button', {
+      type: 'button', 'class': 'cite-go', text: label,
+      onClick: function () {
+        note.textContent = '';
+        if (!select.value) { note.textContent = t('citePrompt'); return; }
+        onPick(select.value, function (msg) { note.textContent = msg; });
+      }
+    });
+
+    wrap.appendChild(h('div', { 'class': 'cite-row' }, [select, go]));
+    wrap.appendChild(note);
+    return wrap;
   }
 
   function highlight(text, query) {
@@ -657,38 +782,87 @@
     return f;
   }
 
-  /* ── Accuse ───────────────────────────────────────────────────────────── */
+  /* ── Verdict ──────────────────────────────────────────────────────────── */
 
+  /* Naming a suspect is still one click, but the file now offers what an
+     investigator actually does first: rule people out, in writing, against a
+     document. A suspect the player has cleared is one the verdict no longer
+     offers, so the work narrows the field instead of guessing at it. Naming
+     without clearing anyone stays possible, and stays a gamble. */
   function renderAccuse(kase, state) {
     var solution = kase.solution || {};
     var culprit = typeof solution.culprit === 'number' ? solution.culprit : 0;
     var chosen = state.accused;
-
-    var options = h('div', { 'class': 'accuse-options' }, kase.suspects.map(function (s, i) {
-      return h('button', {
-        type: 'button',
-        'class': 'accuse-option' + (chosen === i ? ' on' : ''),
-        text: L(s.name),
-        onClick: function () { Store.setAccused(kase.id, i, i === culprit); render(); }
-      });
-    }));
+    var decided = chosen !== null && chosen !== undefined;
 
     // Backfill for answers given before the result was recorded, so an old
     // solve still counts towards the rank on the next visit.
-    if (chosen !== null && chosen !== undefined && state.correct === null) {
+    if (decided && state.correct === null) {
       Store.setAccused(kase.id, chosen, chosen === culprit);
     }
 
-    var kids = [
-      h('p', { text: t('accuseIntro') }),
-      options
-    ];
+    var kids = [h('p', { text: t('eliminateIntro') })];
 
-    if (chosen !== null && chosen !== undefined) {
+    if (!decided) {
+      var refs = citableRefs(kase, state);
+
+      kids.push(h('div', { 'class': 'elim' }, kase.suspects.map(function (s, i) {
+        var citedRef = state.cleared[String(i)];
+        var row = h('div', { 'class': 'elim-row' + (citedRef ? ' cleared' : '') }, [
+          h('div', { 'class': 'elim-head' }, [
+            h('div', {}, [
+              h('div', { 'class': 'elim-name', text: L(s.name) }),
+              h('div', { 'class': 'elim-role', text: L(s.role) })
+            ]),
+            citedRef && h('div', { 'class': 'elim-badge', text: t('clearedBadge') + ' · ' + citedRef })
+          ])
+        ]);
+
+        if (citedRef) {
+          row.appendChild(h('div', { 'class': 'elim-why', text: L(s.cleared) }));
+          row.appendChild(h('button', {
+            type: 'button', 'class': 'elim-undo', text: t('undoClear'),
+            onClick: function () { Store.unclear(kase.id, i); render(); }
+          }));
+        } else {
+          row.appendChild(citeControl(refs, t('clearThis'), function (ref, say) {
+            var by = s.clearedBy || [];
+            if (by.indexOf(ref) === -1) { say(t('clearWrong')); return; }
+            Store.setCleared(kase.id, i, ref);
+            render();
+          }));
+        }
+        return row;
+      })));
+
+      var open = [];
+      kase.suspects.forEach(function (s, i) { if (!state.cleared[String(i)]) open.push(i); });
+
+      kids.push(h('div', { 'class': 'accuse-name' }, [
+        h('div', { 'class': 'label', text: open.length === 1 ? t('lastStanding') : t('nameAnyway') }),
+        h('div', { 'class': 'accuse-options' }, open.map(function (i) {
+          return h('button', {
+            type: 'button', 'class': 'accuse-option',
+            text: L(kase.suspects[i].name),
+            onClick: function () { Store.setAccused(kase.id, i, i === culprit); render(); }
+          });
+        }))
+      ]));
+    }
+
+    if (decided) {
       var correct = chosen === culprit;
       var body = correct
         ? L(solution.correct)
         : (L(kase.suspects[chosen] && kase.suspects[chosen].cleared) || L(solution.wrong));
+
+      // The player's own working, shown back to them with the verdict.
+      var working = Object.keys(state.cleared).map(function (k) {
+        return h('div', { 'class': 'working-row' }, [
+          h('span', { 'class': 'working-ref', text: state.cleared[k] }),
+          h('span', { text: L(kase.suspects[k] && kase.suspects[k].name) })
+        ]);
+      });
 
       kids.push(h('div', { 'class': 'result' + (correct ? ' correct' : '') }, [
         h('div', {
@@ -698,6 +872,8 @@
         }),
         h('h3', { text: L(correct ? solution.correctTitle : solution.wrongTitle) }),
         h('p', { text: body }),
+        working.length ? h('div', { 'class': 'working' },
+          [h('div', { 'class': 'label', text: t('ruledOut') })].concat(working)) : null,
         h('div', { 'class': 'result-actions' }, [
           h('a', { href: '#/', text: t('nextCase') }),
           h('button', { type: 'button', text: t('shareCard'), onClick: shareCard(kase, correct) }),
