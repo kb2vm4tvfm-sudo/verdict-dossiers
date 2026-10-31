@@ -1,34 +1,51 @@
 {
   "stamp": "Road, Wiltshire · 30 June 1860 · confidential",
   "synopsis": "A three-year-old boy is lifted from his cot in the night. His father had locked every door into the hall himself. By morning the child is in the privy in the shrubbery with his throat cut, and everyone who could have done it slept under that roof.",
-
   "detailMeta": [
-    { "label": "Runtime", "value": "60 minutes" },
-    { "label": "Players", "value": "1–4" },
-    { "label": "Documents", "value": "8" },
-    { "label": "Case status", "value": "Open verdict — wilful murder by person or persons unknown" }
+    {
+      "label": "Runtime",
+      "value": "60 minutes"
+    },
+    {
+      "label": "Players",
+      "value": "1–4"
+    },
+    {
+      "label": "Documents",
+      "value": "8"
+    },
+    {
+      "label": "Case status",
+      "value": "Open verdict — wilful murder by person or persons unknown"
+    }
   ],
-
   "suspects": [
     {
       "name": "Samuel Saville Kent",
       "role": "The father. Sub-inspector of factories.",
       "note": "Locked the house himself that night, carrying a dark lantern. The lantern had been broken days before and sent to the village to be mended — and was asked for, urgently, that day.",
-      "clearedBy": ["ST-02"],
+      "clearedBy": [
+        "ST-02"
+      ],
       "cleared": "His wife — constitutionally restless and vigilant, by her own account — avers he did not leave their bedroom again until the nurse knocked the following morning."
     },
     {
       "name": "Mary Kent",
       "role": "The stepmother. Formerly governess to the first family.",
       "note": "Looked in on the boy at about eleven. Both children were asleep and the nurse was with them. She was the last person known to see him alive.",
-      "clearedBy": ["ST-03"],
+      "clearedBy": [
+        "ST-03"
+      ],
       "cleared": "She was immediately expecting her confinement. Carrying a sleeping child of three years and ten months down a flight of stairs, out of the house and across the grounds was not within her compass."
     },
     {
       "name": "Elizabeth Gough",
       "role": "The nursemaid. Slept in the night-nursery.",
       "note": "Woke at five, saw the empty cot, and lay down again for an hour. Raised no alarm until half past six.",
-      "clearedBy": ["ST-06", "ST-04"],
+      "clearedBy": [
+        "ST-06",
+        "ST-04"
+      ],
       "cleared": "Charged with the murder and examined at length before the magistrates. No evidence was offered that connected her with the death, and no blood was found on her, on her clothing, or anywhere in the house. She was discharged."
     },
     {
@@ -38,7 +55,6 @@
       "clearedBy": []
     }
   ],
-
   "solution": {
     "culprit": 3,
     "correctTitle": "You named the right person.",
@@ -46,7 +62,6 @@
     "correct": "Constance Kent. The 1860 inquiry could not prove it — she was arrested on Inspector Whicher's charge, examined, and discharged, and Whicher was publicly ruined for having named her. Five years later, in 1865, she confessed. She had taken the child from his cot with the blanket, carried him out through the drawing-room window, and stifled him before the wound was made; the severed trachea is why no one in the house heard a scream. Her motive, in her own account, was jealousy of her stepmother and her stepmother's children. She pleaded guilty, was sentenced to death, and had the sentence commuted to penal servitude for life.",
     "wrong": "The file does not support this."
   },
-
   "pieces": [
     {
       "num": "01",
@@ -54,105 +69,322 @@
       "label": "First response",
       "desc": "The morning of Saturday 30 June 1860, from the raising of the alarm to the recovery of the body.",
       "blocks": [
-        { "head": "The alarm",
-          "text": "At about half past six the nursemaid, Elizabeth Gough, found the cot of Francis Saville Kent empty for the second time. The bedclothes were turned neatly back. There was no mark of struggle and nothing in the room was disordered or displaced. The pillow held the mark where the child's head had rested and the bed still showed the impression of his body. She knocked at her mistress's door and failed to rouse her, returned to the nursery, dressed herself, said her prayers, and knocked a second time: \"Please, ma'am, have you got Master Saville? for he is not in his cot.\"" },
-        { "head": "The search",
-          "text": "Word went through the village that the child was lost or stolen. Thomas Benger, a farmer, came to the house and searched the premises and shrubbery with a man named Nutt. At the door of the water-closet in the shrubbery Benger saw blood on the floor. There was none on the walls or on the seat." },
-        { "head": "The recovery",
-          "text": "Benger lifted the lid of the seat, put in his hand and drew out a blanket. He called for a light and, with the help of a woman, took the child out. The body was lying on the splashboard; but for the splashboard it would have fallen into the vault below. The child wore only his nightdress and a flannel waistcoat. His throat was cut. Benger carried him into the kitchen, and the family came to look at him. The vault was afterwards emptied and nothing further was found in it." },
-        { "head": "Scene integrity",
-          "text": "Superintendent Foley of Trowbridge recovered a piece of flannel from the water-closet, drawing it out with a crook. He observed no blood in any part of the house, nor anywhere about it. He also recorded that the police had been in and out of the drawing-room window before the footmarks there were seen." }
+        {
+          "head": "The alarm",
+          "text": "At about half past six the nursemaid, Elizabeth Gough, found the cot of Francis Saville Kent empty for the second time. The bedclothes were turned neatly back. There was no mark of struggle and nothing in the room was disordered or displaced. The pillow held the mark where the child's head had rested and the bed still showed the impression of his body. She knocked at her mistress's door and failed to rouse her, returned to the nursery, dressed herself, said her prayers, and knocked a second time: \"Please, ma'am, have you got Master Saville? for he is not in his cot.\""
+        },
+        {
+          "head": "The search",
+          "text": "Word went through the village that the child was lost or stolen. Thomas Benger, a farmer, came to the house and searched the premises and shrubbery with a man named Nutt. At the door of the water-closet in the shrubbery Benger saw blood on the floor. There was none on the walls or on the seat."
+        },
+        {
+          "head": "The recovery",
+          "text": "Benger lifted the lid of the seat, put in his hand and drew out a blanket. He called for a light and, with the help of a woman, took the child out. The body was lying on the splashboard; but for the splashboard it would have fallen into the vault below. The child wore only his nightdress and a flannel waistcoat. His throat was cut. Benger carried him into the kitchen, and the family came to look at him. The vault was afterwards emptied and nothing further was found in it."
+        },
+        {
+          "head": "Scene integrity",
+          "text": "Superintendent Foley of Trowbridge recovered a piece of flannel from the water-closet, drawing it out with a crook. He observed no blood in any part of the house, nor anywhere about it. He also recorded that the police had been in and out of the drawing-room window before the footmarks there were seen."
+        }
       ],
       "attachments": [
-        { "title": "Blanket, recovered from the seat of the water-closet", "meta": "from the child's cot" },
-        { "title": "Piece of flannel, recovered with a crook", "meta": "water-closet" },
-        { "title": "Paper stained with blood", "meta": "found near the water-closet by Stephen Millet" }
+        {
+          "title": "Blanket, recovered from the seat of the water-closet",
+          "meta": "from the child's cot"
+        },
+        {
+          "title": "Piece of flannel, recovered with a crook",
+          "meta": "water-closet"
+        },
+        {
+          "title": "Paper stained with blood",
+          "meta": "found near the water-closet by Stephen Millet"
+        }
       ]
     },
-
     {
       "num": "02",
       "type": "scene",
       "label": "Road Hill House",
       "desc": "Who slept where, and how the house was shut. Mr Kent went over the premises himself after the household had gone up.",
-      "image": null,
+      "image": "assets/covers/193-scene.svg",
       "pins": [
-        { "pin": "A", "ref": "SC-01", "text": "Night-nursery, over the hall, first floor. Two compartments. In the first the murdered boy and his youngest sister slept with the nurse. The little girl's cot was drawn close to the nurse's bed; the boy's cot stood in a distant corner. The window looks onto the front lawn." },
-        { "pin": "B", "ref": "SC-02", "text": "Second compartment of the nursery, used as a bath and dressing room. Its window looks out over the roof of the dining room, and a person might climb to it along that roof. The wall is ivy-covered and a dog was loose in the court. The strictest scrutiny the following day found no disturbance of the leaves, in ascent or descent." },
-        { "pin": "C", "ref": "SC-03", "text": "Mr and Mrs Kent's bedroom, over the library, first floor, with a dressing room attached. The dressing room has a second door opening directly onto the landing beside the nursery door. That door is never used and is fastened shut by a heavy piece of furniture placed against it on the inside. Their eldest little girl slept in a crib in their room." },
-        { "pin": "D", "ref": "SC-04", "text": "Second floor. Constance Kent's bedroom, smaller than the others, over Mr Kent's dressing room. She slept alone. The two eldest daughters shared the room over Mrs Kent's; the cook and housemaid shared the room opposite; William Kent slept alone in his own room on the same floor." },
-        { "pin": "E", "ref": "SC-05", "text": "Back staircase, reached by a short passage past the water-closet, running down to the kitchen. Its use was restricted to the servants and habitual to them. At the bottom is a door that falls together of its own accord and shuts off all communication with the house." },
-        { "pin": "F", "ref": "SC-06", "text": "Mr Kent's round. After the household had gone up he went over the premises with a dark lantern, satisfying himself that every door opening into the hall was secured on the hall side, so that no one could reach the hall through either parlour or the kitchen passage, and that the cellar door was fast. All passage into the hall was therefore sealed." },
-        { "pin": "G", "ref": "SC-07", "text": "Drawing-room window, found open in the morning. The question of whether the child was carried out through it, and whether its opening was a disguise, divided the investigation from the first day. The police had passed in and out of it before the footmarks outside were examined." },
-        { "pin": "H", "ref": "SC-08", "text": "The water-closet in the shrubbery, screened by yew. The body was found here, on the splashboard above the vault, with the cot blanket pushed in beside it." }
+        {
+          "pin": "A",
+          "ref": "SC-01",
+          "text": "Night-nursery, over the hall, first floor. Two compartments. In the first the murdered boy and his youngest sister slept with the nurse. The little girl's cot was drawn close to the nurse's bed; the boy's cot stood in a distant corner. The window looks onto the front lawn."
+        },
+        {
+          "pin": "B",
+          "ref": "SC-02",
+          "text": "Second compartment of the nursery, used as a bath and dressing room. Its window looks out over the roof of the dining room, and a person might climb to it along that roof. The wall is ivy-covered and a dog was loose in the court. The strictest scrutiny the following day found no disturbance of the leaves, in ascent or descent."
+        },
+        {
+          "pin": "C",
+          "ref": "SC-03",
+          "text": "Mr and Mrs Kent's bedroom, over the library, first floor, with a dressing room attached. The dressing room has a second door opening directly onto the landing beside the nursery door. That door is never used and is fastened shut by a heavy piece of furniture placed against it on the inside. Their eldest little girl slept in a crib in their room."
+        },
+        {
+          "pin": "D",
+          "ref": "SC-04",
+          "text": "Second floor. Constance Kent's bedroom, smaller than the others, over Mr Kent's dressing room. She slept alone. The two eldest daughters shared the room over Mrs Kent's; the cook and housemaid shared the room opposite; William Kent slept alone in his own room on the same floor."
+        },
+        {
+          "pin": "E",
+          "ref": "SC-05",
+          "text": "Back staircase, reached by a short passage past the water-closet, running down to the kitchen. Its use was restricted to the servants and habitual to them. At the bottom is a door that falls together of its own accord and shuts off all communication with the house."
+        },
+        {
+          "pin": "F",
+          "ref": "SC-06",
+          "text": "Mr Kent's round. After the household had gone up he went over the premises with a dark lantern, satisfying himself that every door opening into the hall was secured on the hall side, so that no one could reach the hall through either parlour or the kitchen passage, and that the cellar door was fast. All passage into the hall was therefore sealed."
+        },
+        {
+          "pin": "G",
+          "ref": "SC-07",
+          "text": "Drawing-room window, found open in the morning. The question of whether the child was carried out through it, and whether its opening was a disguise, divided the investigation from the first day. The police had passed in and out of it before the footmarks outside were examined."
+        },
+        {
+          "pin": "H",
+          "ref": "SC-08",
+          "text": "The water-closet in the shrubbery, screened by yew. The body was found here, on the splashboard above the vault, with the cot blanket pushed in beside it."
+        }
       ]
     },
-
     {
       "num": "03",
       "type": "forensics",
       "label": "Post-mortem",
       "desc": "J. Parsons Esq., surgeon, of Beckington, who attended the body in the laundry on the Saturday morning and gave evidence at the inquest.",
       "rows": [
-        { "ref": "PM-01", "finding": "Throat cut to the bone by a sharp instrument. A single clean cut, not jagged, severing the skin, all the blood-vessels and the nerves.", "method": "External examination", "status": "Conclusive", "conclusive": true },
-        { "ref": "PM-02", "finding": "A stab through the flannel shirt, entering below the pericardium and extending three-quarters of the width of the chest. Made with a sharp, long, strong, pointed instrument. It could not have been done by a razor.", "method": "External examination", "status": "Conclusive", "conclusive": true },
-        { "ref": "PM-03", "finding": "Two small cuts on the left hand, from which no blood had flowed.", "method": "External examination", "status": "Conclusive", "conclusive": true },
-        { "ref": "PM-04", "finding": "So large a quantity of blood is not accounted for as cutting the throat of a child this large and this well developed would be likely to produce.", "method": "Surgeon's opinion", "status": "Opinion", "conclusive": false },
-        { "ref": "PM-05", "finding": "Blood about the premises estimated at about three half-pints.", "method": "Estimate by Stephen Millet, butcher", "status": "Estimate", "conclusive": false },
-        { "ref": "PM-06", "finding": "Internal parts healthy. The child had evidently not been drugged.", "method": "Internal examination", "status": "Conclusive", "conclusive": true },
-        { "ref": "PM-07", "finding": "Dead at least five hours when examined.", "method": "Surgeon's opinion", "status": "Opinion", "conclusive": false },
-        { "ref": "PM-08", "finding": "The child was dressed in his nightdress and a flannel waistcoat, both still on the body. Blood on the floor of the water-closet, none on its walls or seat.", "method": "Scene observation", "status": "Conclusive", "conclusive": true }
+        {
+          "ref": "PM-01",
+          "finding": "Throat cut to the bone by a sharp instrument. A single clean cut, not jagged, severing the skin, all the blood-vessels and the nerves.",
+          "method": "External examination",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "PM-02",
+          "finding": "A stab through the flannel shirt, entering below the pericardium and extending three-quarters of the width of the chest. Made with a sharp, long, strong, pointed instrument. It could not have been done by a razor.",
+          "method": "External examination",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "PM-03",
+          "finding": "Two small cuts on the left hand, from which no blood had flowed.",
+          "method": "External examination",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "PM-04",
+          "finding": "So large a quantity of blood is not accounted for as cutting the throat of a child this large and this well developed would be likely to produce.",
+          "method": "Surgeon's opinion",
+          "status": "Opinion",
+          "conclusive": false
+        },
+        {
+          "ref": "PM-05",
+          "finding": "Blood about the premises estimated at about three half-pints.",
+          "method": "Estimate by Stephen Millet, butcher",
+          "status": "Estimate",
+          "conclusive": false
+        },
+        {
+          "ref": "PM-06",
+          "finding": "Internal parts healthy. The child had evidently not been drugged.",
+          "method": "Internal examination",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "PM-07",
+          "finding": "Dead at least five hours when examined.",
+          "method": "Surgeon's opinion",
+          "status": "Opinion",
+          "conclusive": false
+        },
+        {
+          "ref": "PM-08",
+          "finding": "The child was dressed in his nightdress and a flannel waistcoat, both still on the body. Blood on the floor of the water-closet, none on its walls or seat.",
+          "method": "Scene observation",
+          "status": "Conclusive",
+          "conclusive": true
+        }
       ]
     },
-
     {
       "num": "04",
       "type": "forensics",
       "label": "Statements on the night",
       "desc": "What each member of the household accounted for, and what corroborates it. Read the corroboration column as carefully as the claim.",
       "rows": [
-        { "ref": "ST-01", "finding": "The boy was put to bed at about eight. At about eleven Mrs Kent came to the night-nursery and found the nurse there; both children were quietly asleep. The nursery door was then closed.", "method": "Mrs Kent; Elizabeth Gough", "status": "Agreed", "conclusive": true },
-        { "ref": "ST-02", "finding": "Mr Kent retired after his round and, on his wife's averment, never left the room again until the nurse knocked the following morning.", "method": "Mrs Kent — spousal, uncorroborated", "status": "Asserted", "conclusive": false },
-        { "ref": "ST-03", "finding": "Mrs Kent was immediately expecting her confinement.", "method": "Household fact, not in dispute", "status": "Conclusive", "conclusive": true },
-        { "ref": "ST-04", "finding": "No blood was observed in any part of the house, nor anywhere about it.", "method": "Supt. Foley, Trowbridge division", "status": "Conclusive", "conclusive": true },
-        { "ref": "ST-05", "finding": "Elizabeth Gough woke at five, saw the cot empty, and lay down again for an hour, satisfied the child had been taken to his mother — her stated reason being that she had heard Mrs Kent say she would fetch him if he cried. She raised no alarm until half past six.", "method": "Elizabeth Gough, before the magistrates", "status": "Admitted", "conclusive": true },
-        { "ref": "ST-06", "finding": "Elizabeth Gough was charged with the murder and examined at length before the magistrates. No evidence was offered connecting her with the death. She was discharged.", "method": "Magistrates' inquiry", "status": "Discharged", "conclusive": true },
-        { "ref": "ST-07", "finding": "There were no visitors in the house. Three servants slept in it — the nurse, the cook and the housemaid — and no man-servants. All were present that night.", "method": "Elizabeth Gough, before the magistrates", "status": "Conclusive", "conclusive": true }
+        {
+          "ref": "ST-01",
+          "finding": "The boy was put to bed at about eight. At about eleven Mrs Kent came to the night-nursery and found the nurse there; both children were quietly asleep. The nursery door was then closed.",
+          "method": "Mrs Kent; Elizabeth Gough",
+          "status": "Agreed",
+          "conclusive": true
+        },
+        {
+          "ref": "ST-02",
+          "finding": "Mr Kent retired after his round and, on his wife's averment, never left the room again until the nurse knocked the following morning.",
+          "method": "Mrs Kent — spousal, uncorroborated",
+          "status": "Asserted",
+          "conclusive": false
+        },
+        {
+          "ref": "ST-03",
+          "finding": "Mrs Kent was immediately expecting her confinement.",
+          "method": "Household fact, not in dispute",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "ST-04",
+          "finding": "No blood was observed in any part of the house, nor anywhere about it.",
+          "method": "Supt. Foley, Trowbridge division",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "ST-05",
+          "finding": "Elizabeth Gough woke at five, saw the cot empty, and lay down again for an hour, satisfied the child had been taken to his mother — her stated reason being that she had heard Mrs Kent say she would fetch him if he cried. She raised no alarm until half past six.",
+          "method": "Elizabeth Gough, before the magistrates",
+          "status": "Admitted",
+          "conclusive": true
+        },
+        {
+          "ref": "ST-06",
+          "finding": "Elizabeth Gough was charged with the murder and examined at length before the magistrates. No evidence was offered connecting her with the death. She was discharged.",
+          "method": "Magistrates' inquiry",
+          "status": "Discharged",
+          "conclusive": true
+        },
+        {
+          "ref": "ST-07",
+          "finding": "There were no visitors in the house. Three servants slept in it — the nurse, the cook and the housemaid — and no man-servants. All were present that night.",
+          "method": "Elizabeth Gough, before the magistrates",
+          "status": "Conclusive",
+          "conclusive": true
+        }
       ]
     },
-
     {
       "num": "05",
       "type": "database",
       "label": "Antecedents",
       "desc": "Searchable. Household record and prior history, as laid before the magistrates and reported.",
       "rows": [
-        { "code": "AN-01", "ref": "AN-01", "title": "Francis Saville Kent, deceased, three years and ten months. Only son of the second marriage.", "src": "Household register", "type": "Victim" },
-        { "code": "AN-02", "ref": "AN-02", "title": "First family: Mary Ann, Elizabeth, Constance Emily (16), William Saville (15). Second family: Mary Amelia (5), Francis Saville (deceased), Eveline Fanny.", "src": "Elizabeth Gough, before the magistrates", "type": "Household" },
-        { "code": "AN-03", "ref": "AN-03", "title": "Mary Kent was governess to the first family before her marriage to Mr Kent.", "src": "Family history", "type": "Household" },
-        { "code": "AN-04", "ref": "AN-04", "title": "Constance came home from school for the holidays about a fortnight before the murder. William came home three days before his sister.", "src": "Elizabeth Gough, before the magistrates", "type": "Household" },
-        { "code": "AN-05", "ref": "AN-05", "title": "In 1856 Constance absconded from home. She went to the closet in the shrubbery, put on old clothes of her brother William's that she had secreted and mended, cut off her hair, and flung her hair and her own clothes into the vault of that closet.", "src": "Reported antecedents", "type": "Prior conduct" },
-        { "code": "AN-06", "ref": "AN-06", "title": "She then walked ten miles to Bath with William and asked for beds at the Greyhound Hotel. The landlady's suspicions were roused. William broke down and wept; Constance was self-possessed and insolent, and spent the night in the police detention room.", "src": "Reported antecedents", "type": "Prior conduct" },
-        { "code": "AN-07", "ref": "AN-07", "title": "Before that episode Constance had complained of weak ankles, been examined by a medical man, been put in laced stockings, excused from dancing and much walking, and taken to the Bath flower-show in a wheeled chair.", "src": "Reported antecedents", "type": "Prior conduct" },
-        { "code": "AN-08", "ref": "AN-08", "title": "Mr Kent's dark lantern had been broken some days earlier and sent into the village to be mended. It was repeatedly, and somewhat urgently, sent for on the day of the murder.", "src": "Reported circumstance", "type": "Circumstance" }
+        {
+          "code": "AN-01",
+          "ref": "AN-01",
+          "title": "Francis Saville Kent, deceased, three years and ten months. Only son of the second marriage.",
+          "src": "Household register",
+          "type": "Victim"
+        },
+        {
+          "code": "AN-02",
+          "ref": "AN-02",
+          "title": "First family: Mary Ann, Elizabeth, Constance Emily (16), William Saville (15). Second family: Mary Amelia (5), Francis Saville (deceased), Eveline Fanny.",
+          "src": "Elizabeth Gough, before the magistrates",
+          "type": "Household"
+        },
+        {
+          "code": "AN-03",
+          "ref": "AN-03",
+          "title": "Mary Kent was governess to the first family before her marriage to Mr Kent.",
+          "src": "Family history",
+          "type": "Household"
+        },
+        {
+          "code": "AN-04",
+          "ref": "AN-04",
+          "title": "Constance came home from school for the holidays about a fortnight before the murder. William came home three days before his sister.",
+          "src": "Elizabeth Gough, before the magistrates",
+          "type": "Household"
+        },
+        {
+          "code": "AN-05",
+          "ref": "AN-05",
+          "title": "In 1856 Constance absconded from home. She went to the closet in the shrubbery, put on old clothes of her brother William's that she had secreted and mended, cut off her hair, and flung her hair and her own clothes into the vault of that closet.",
+          "src": "Reported antecedents",
+          "type": "Prior conduct"
+        },
+        {
+          "code": "AN-06",
+          "ref": "AN-06",
+          "title": "She then walked ten miles to Bath with William and asked for beds at the Greyhound Hotel. The landlady's suspicions were roused. William broke down and wept; Constance was self-possessed and insolent, and spent the night in the police detention room.",
+          "src": "Reported antecedents",
+          "type": "Prior conduct"
+        },
+        {
+          "code": "AN-07",
+          "ref": "AN-07",
+          "title": "Before that episode Constance had complained of weak ankles, been examined by a medical man, been put in laced stockings, excused from dancing and much walking, and taken to the Bath flower-show in a wheeled chair.",
+          "src": "Reported antecedents",
+          "type": "Prior conduct"
+        },
+        {
+          "code": "AN-08",
+          "ref": "AN-08",
+          "title": "Mr Kent's dark lantern had been broken some days earlier and sent into the village to be mended. It was repeatedly, and somewhat urgently, sent for on the day of the murder.",
+          "src": "Reported circumstance",
+          "type": "Circumstance"
+        }
       ]
     },
-
     {
       "num": "06",
       "type": "forensics",
       "label": "The missing nightdress",
       "desc": "The Trowbridge magistrates' inquiry into the linen. Inspector Whicher's case rested on this and on little else.",
       "rows": [
-        { "ref": "NB-01", "finding": "On the night of the murder Constance Kent had three nightdresses. Two remain in existence, or at least two are producible.", "method": "Magistrates' inquiry", "status": "Conclusive", "conclusive": true },
-        { "ref": "NB-02", "finding": "Monday 2 July. The housemaid collected the dirty linen in the lumber-room, as every Monday, in the presence of Miss Kent, who entered each item in a book. A nightdress of Constance's was thrown out on the landing as usual, put into the basket, and entered on the list.", "method": "Housemaid", "status": "Conclusive", "conclusive": true },
-        { "ref": "NB-03", "finding": "Before the packing was quite finished, Constance came to the door of the lumber-room and asked the housemaid to look in her slip pocket for a purse. The servant looked, without success. Constance then asked her to go down and fetch a glass of water, and followed her to the top of the back stairs as she went.", "method": "Housemaid", "status": "Conclusive", "conclusive": true },
-        { "ref": "NB-04", "finding": "When the housemaid returned, Constance was there. She drank the water and went up the back stairs to her own room.", "method": "Housemaid", "status": "Conclusive", "conclusive": true },
-        { "ref": "NB-05", "finding": "On the Tuesday evening the washerwoman's daughter sent word that three nightdresses were entered in the book but only two were in the basket when it reached the house, and that the missing one was Constance Kent's.", "method": "Washerwoman's count against the book", "status": "Conclusive", "conclusive": true },
-        { "ref": "NB-06", "finding": "The garment was never produced. The prosecution case was that she had worn a nightdress during the murder, destroyed or concealed it on her return, and taken another from her drawer to replace it in the bed.", "method": "Prosecution theory", "status": "Theory", "conclusive": false }
+        {
+          "ref": "NB-01",
+          "finding": "On the night of the murder Constance Kent had three nightdresses. Two remain in existence, or at least two are producible.",
+          "method": "Magistrates' inquiry",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "NB-02",
+          "finding": "Monday 2 July. The housemaid collected the dirty linen in the lumber-room, as every Monday, in the presence of Miss Kent, who entered each item in a book. A nightdress of Constance's was thrown out on the landing as usual, put into the basket, and entered on the list.",
+          "method": "Housemaid",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "NB-03",
+          "finding": "Before the packing was quite finished, Constance came to the door of the lumber-room and asked the housemaid to look in her slip pocket for a purse. The servant looked, without success. Constance then asked her to go down and fetch a glass of water, and followed her to the top of the back stairs as she went.",
+          "method": "Housemaid",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "NB-04",
+          "finding": "When the housemaid returned, Constance was there. She drank the water and went up the back stairs to her own room.",
+          "method": "Housemaid",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "NB-05",
+          "finding": "On the Tuesday evening the washerwoman's daughter sent word that three nightdresses were entered in the book but only two were in the basket when it reached the house, and that the missing one was Constance Kent's.",
+          "method": "Washerwoman's count against the book",
+          "status": "Conclusive",
+          "conclusive": true
+        },
+        {
+          "ref": "NB-06",
+          "finding": "The garment was never produced. The prosecution case was that she had worn a nightdress during the murder, destroyed or concealed it on her return, and taken another from her drawer to replace it in the bed.",
+          "method": "Prosecution theory",
+          "status": "Theory",
+          "conclusive": false
+        }
       ]
     },
-
     {
       "num": "07",
       "type": "interview",
@@ -163,50 +395,76 @@
           "subject": "Constance Emily Kent",
           "meta": "Before the coroner · adjourned to Mr Kent's house · July 1860",
           "lines": [
-            { "time": "—", "ref": "IV-01",
+            {
+              "time": "—",
+              "ref": "IV-01",
               "q": "At what hour did you retire, and were you disturbed in the night?",
-              "a": "I retired to my bedroom, on the floor above the deceased, at my usual time, about half past ten. I was not disturbed at all during the night, and knew nothing concerning my brother until the next morning." },
-            { "time": "—", "ref": "IV-02",
+              "a": "I retired to my bedroom, on the floor above the deceased, at my usual time, about half past ten. I was not disturbed at all during the night, and knew nothing concerning my brother until the next morning."
+            },
+            {
+              "time": "—",
+              "ref": "IV-02",
               "q": "Had anyone in the house any ill-will towards the child?",
               "a": "Every one was kind to the child. I never heard of any one bearing him any ill-will.",
               "contradictedBy": "NB-05",
-              "tell": "Three nightdresses were entered in the book and two reached the washerwoman. The missing one was hers — and she had manoeuvred the housemaid out of the lumber-room to be alone with the basket. Whatever she knew of ill-will, she took steps that week that nobody else in the house took." }
+              "tell": "Three nightdresses were entered in the book and two reached the washerwoman. The missing one was hers — and she had manoeuvred the housemaid out of the lumber-room to be alone with the basket. Whatever she knew of ill-will, she took steps that week that nobody else in the house took."
+            }
           ]
         },
         {
           "subject": "William Saville Kent",
           "meta": "Before the coroner · adjourned to Mr Kent's house · July 1860",
           "lines": [
-            { "time": "—", "ref": "IV-03",
+            {
+              "time": "—",
+              "ref": "IV-03",
               "q": "Have you anything to add to your sister's account?",
-              "a": "My evidence is precisely similar to hers." }
+              "a": "My evidence is precisely similar to hers."
+            }
           ]
         },
         {
           "subject": "Elizabeth Gough",
           "meta": "Before the magistrates · confirmed her earlier evidence and continued · 30 July 1860",
           "lines": [
-            { "time": "05:00", "ref": "IV-04",
+            {
+              "time": "05:00",
+              "ref": "IV-04",
               "q": "You woke at five o'clock. What did you do?",
-              "a": "I awoke at five o'clock, and missed the child; but as I thought he had been taken in to his mother, I lay down again for an hour. I felt satisfied that he was gone; for if he had cried his mother would have fetched him. I felt satisfied the child was in her room, because I had heard her say a little time before that if he cried she would come in and fetch him. That was my only reason." },
-            { "time": "06:45", "ref": "IV-05",
+              "a": "I awoke at five o'clock, and missed the child; but as I thought he had been taken in to his mother, I lay down again for an hour. I felt satisfied that he was gone; for if he had cried his mother would have fetched him. I felt satisfied the child was in her room, because I had heard her say a little time before that if he cried she would come in and fetch him. That was my only reason."
+            },
+            {
+              "time": "06:45",
+              "ref": "IV-05",
               "q": "When did you first see the prisoner that morning?",
-              "a": "When I came to the door of her sisters' room, to ask if they had taken the child. I suppose that was about a quarter before seven. I asked the two sisters if they had taken Saville from the nursery. They said no — they had not seen him. Miss Constance's bedroom door is quite close to that of her two sisters, and she was standing by her own room door, nearly dressed. The two sisters then said to me, 'Have you seen Mrs Kent?' I replied that I had, and that she hadn't seen the child. Miss Constance most likely heard what was said. It was said in her hearing. She did not make any remark that I know of." }
+              "a": "When I came to the door of her sisters' room, to ask if they had taken the child. I suppose that was about a quarter before seven. I asked the two sisters if they had taken Saville from the nursery. They said no — they had not seen him. Miss Constance's bedroom door is quite close to that of her two sisters, and she was standing by her own room door, nearly dressed. The two sisters then said to me, 'Have you seen Mrs Kent?' I replied that I had, and that she hadn't seen the child. Miss Constance most likely heard what was said. It was said in her hearing. She did not make any remark that I know of."
+            }
           ]
         }
       ]
     },
-
     {
       "num": "08",
       "type": "notepad",
       "label": "Your notepad",
       "desc": "The coroner's jury could go no further than an open verdict. You are not bound by it.",
       "pinned": [
-        { "tag": "The coroner", "text": "\"One of the most mysterious murders of which he had ever heard… he saw no reason to attach suspicion to any one in particular.\" Verdict: wilful murder against some person or persons unknown." },
-        { "tag": "Open question", "text": "The bedclothes were turned neatly back and the shape of the child was still in the bed. Who lifts a sleeping child out and then tidies after themselves?" },
-        { "tag": "Open question", "text": "Three half-pints of blood for a cut that severed every vessel in the throat. Where is the rest of it, and what does its absence say about the order of the injuries?" },
-        { "tag": "Open question", "text": "The blanket went with the child. Nothing else in the nursery was disturbed." }
+        {
+          "tag": "The coroner",
+          "text": "\"One of the most mysterious murders of which he had ever heard… he saw no reason to attach suspicion to any one in particular.\" Verdict: wilful murder against some person or persons unknown."
+        },
+        {
+          "tag": "Open question",
+          "text": "The bedclothes were turned neatly back and the shape of the child was still in the bed. Who lifts a sleeping child out and then tidies after themselves?"
+        },
+        {
+          "tag": "Open question",
+          "text": "Three half-pints of blood for a cut that severed every vessel in the throat. Where is the rest of it, and what does its absence say about the order of the injuries?"
+        },
+        {
+          "tag": "Open question",
+          "text": "The blanket went with the child. Nothing else in the nursery was disturbed."
+        }
       ]
     }
   ]

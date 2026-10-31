@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1560" width="700" height="1560" preserveAspectRatio="xMidYMin meet" role="img"
+     aria-label="Schematic plan of Road Hill House, 1860, showing the ground, first and second floors, the route taken from the night-nursery to the water-closet in the shrubbery, and the positions of the household on the night of 29 June 1860.">
+  <defs>
+    <style>
+      .ink    { fill: none; stroke: #EAE9E4; }
+      .wall   { stroke-width: 2; }
+      .part   { stroke-width: .9; }
+      .thin   { stroke-width: .6; opacity: .55; }
+      .room   { fill: #EAE9E4; fill-opacity: .045; }
+      .lbl    { fill: #EAE9E4; font-family: Georgia,'Times New Roman',serif; font-size: 9.5px;
+                letter-spacing: 1.1px; text-anchor: middle; }
+      .lbl-s  { fill: #EAE9E4; font-family: Georgia,'Times New Roman',serif; font-size: 8px;
+                letter-spacing: .8px; text-anchor: middle; opacity: .62; }
+      .occ    { fill: #EAE9E4; font-family: ui-monospace,Menlo,monospace; font-size: 7px;
+                letter-spacing: .6px; text-anchor: middle; opacity: .5; }
+      .ttl    { fill: #EAE9E4; font-family: Georgia,'Times New Roman',serif; font-size: 17px;
+                letter-spacing: 3.4px; text-anchor: middle; }
+      .head   { fill: #EAE9E4; font-family: Georgia,'Times New Roman',serif; font-size: 24px;
+                letter-spacing: 5px; }
+      .sub    { fill: #EAE9E4; font-family: ui-monospace,Menlo,monospace; font-size: 9px;
+                letter-spacing: 2.6px; opacity: .55; }
+      .mono   { fill: #EAE9E4; font-family: ui-monospace,Menlo,monospace; font-size: 8.5px;
+                letter-spacing: .7px; }
+      .red    { stroke: #920805; fill: none; }
+      .redtx  { fill: #920805; font-family: ui-monospace,Menlo,monospace; font-size: 8px;
+                letter-spacing: 1px; }
+      .key    { fill: #EAE9E4; font-family: ui-monospace,Menlo,monospace; font-size: 7.5px;
+                text-anchor: middle; font-weight: 700; }
+      .legend { fill: #EAE9E4; font-family: ui-monospace,Menlo,monospace; font-size: 8.5px;
+                letter-spacing: .4px; opacity: .78; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#920805"/>
+    </marker>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="700" height="1560" fill="#000000"/>
+  <rect width="700" height="1560" fill="#EAE9E4" filter="url(#grain)" opacity=".5"/>
+  <rect x="14" y="14" width="672" height="1532" class="ink" stroke-width="1" opacity=".3"/>
+
+  <text x="40" y="58" class="head">ROAD HILL HOUSE</text>
+  <text x="42" y="80" class="sub">RODE · WILTSHIRE · PLAN ANNEXED TO THE DEPOSITIONS · 1860</text>
+  <text x="660" y="58" class="sub" text-anchor="end">FILE 193</text>
+
+  <!-- compass -->
+  <g transform="translate(640,112)">
+    <circle r="17" class="ink thin"/>
+    <path d="M0,-21 L4.5,0 L0,13 L-4.5,0 Z" fill="#EAE9E4" opacity=".8"/>
+    <path d="M0,21 L4.5,0 L0,-13 L-4.5,0 Z" fill="#EAE9E4" opacity=".25"/>
+    <text x="0" y="-27" class="occ" style="opacity:.8">N</text>
+  </g>
+
+  <text x="265" y="128" class="ttl">GROUND FLOOR</text>
+  <line x1="178" y1="136" x2="352" y2="136" class="ink thin"/>
+  <text x="265" y="608" class="ttl">FIRST FLOOR</text>
+  <line x1="192" y1="616" x2="338" y2="616" class="ink thin"/>
+  <text x="265" y="943" class="ttl">SECOND FLOOR</text>
+  <line x1="182" y1="951" x2="348" y2="951" class="ink thin"/>
+
+  <!-- ══════════════ GROUND FLOOR ══════════════ -->
+  <g transform="translate(0,-30)">
+    <rect x="110" y="190" width="310" height="240" class="room"/>
+    <rect x="420" y="300" width="75"  height="130" class="room"/>
+    <rect x="110" y="190" width="310" height="240" class="ink wall"/>
+    <rect x="420" y="300" width="75"  height="130" class="ink wall"/>
+
+    <line x1="110" y1="300" x2="420" y2="300" class="ink part"/>
+    <line x1="200" y1="190" x2="200" y2="430" class="ink part"/>
+    <line x1="310" y1="190" x2="310" y2="430" class="ink part"/>
+
+    <text x="155" y="241" class="lbl">MORNING</text>
+    <text x="155" y="253" class="lbl">ROOM</text>
+    <text x="255" y="247" class="lbl">KITCHEN</text>
+    <text x="365" y="212" class="lbl-s">BACK STAIRS</text>
+    <text x="365" y="223" class="lbl-s">&amp; PASSAGE</text>
+
+    <text x="155" y="367" class="lbl">LIBRARY</text>
+    <text x="255" y="341" class="lbl">ENTRANCE</text>
+    <text x="255" y="353" class="lbl">HALL</text>
+    <text x="365" y="361" class="lbl">DRAWING</text>
+    <text x="365" y="373" class="lbl">ROOM</text>
+    <text x="457" y="361" class="lbl">DINING</text>
+    <text x="457" y="373" class="lbl">ROOM</text>
+    <text x="457" y="389" class="occ">SINGLE STOREY</text>
+
+    <!-- back stairs treads + self-closing door -->
+    <g class="ink thin">
+      <rect x="328" y="232" width="74" height="52"/>
+      <line x1="328" y1="241" x2="402" y2="241"/><line x1="328" y1="250" x2="402" y2="250"/>
+      <line x1="328" y1="259" x2="402" y2="259"/><line x1="328" y1="268" x2="402" y2="268"/>
+      <line x1="328" y1="277" x2="402" y2="277"/>
+    </g>
+    <line x1="328" y1="290" x2="352" y2="290" stroke="#920805" stroke-width="2.4"/>
+    <text x="390" y="297" class="redtx" text-anchor="end">SELF-CLOSING</text>
+
+    <!-- main stair in the hall -->
+    <g class="ink thin">
+      <rect x="216" y="312" width="74" height="54"/>
+      <line x1="216" y1="321" x2="290" y2="321"/><line x1="216" y1="330" x2="290" y2="330"/>
+      <line x1="216" y1="339" x2="290" y2="339"/><line x1="216" y1="348" x2="290" y2="348"/>
+      <line x1="216" y1="357" x2="290" y2="357"/>
+    </g>
+
+    <!-- openings -->
+    <line x1="238" y1="430" x2="272" y2="430" stroke="#000" stroke-width="3"/>
+    <text x="255" y="443" class="occ">FRONT DOOR</text>
+    <line x1="340" y1="430" x2="386" y2="430" stroke="#000" stroke-width="3"/>
+    <line x1="340" y1="430" x2="386" y2="430" stroke="#920805" stroke-width="2.4"/>
+    <line x1="110" y1="330" x2="110" y2="356" stroke="#000" stroke-width="3"/>
+    <text x="132" y="396" class="occ">CELLAR DOOR</text>
+
+    <!-- grounds -->
+    <path d="M86,430 L86,566 L580,566 L580,430" class="ink thin" stroke-dasharray="3 5"/>
+    <text x="180" y="470" class="lbl-s">LAWN</text>
+    <g fill="#EAE9E4" opacity=".16">
+      <circle cx="446" cy="470" r="13"/><circle cx="470" cy="459" r="16"/><circle cx="497" cy="468" r="13"/>
+      <circle cx="523" cy="482" r="15"/><circle cx="534" cy="512" r="13"/><circle cx="516" cy="539" r="16"/>
+      <circle cx="486" cy="548" r="13"/><circle cx="455" cy="536" r="15"/><circle cx="440" cy="506" r="14"/>
+    </g>
+    <text x="396" y="517" class="lbl-s" text-anchor="end">YEW SHRUBBERY</text>
+    <rect x="468" y="482" width="46" height="46" fill="#000"/>
+    <rect x="468" y="482" width="46" height="46" class="ink wall"/>
+    <line x1="468" y1="505" x2="468" y2="518" stroke="#000" stroke-width="3"/>
+    <g stroke="#920805" stroke-width="2.6">
+      <line x1="479" y1="494" x2="503" y2="517"/><line x1="503" y1="494" x2="479" y2="517"/>
+    </g>
+    <text x="491" y="547" class="redtx" text-anchor="middle">WATER-CLOSET</text>
+
+    <!-- the route -->
+    <path d="M253,366 L253,392 L363,392 L363,430" class="red" stroke-width="1.6" stroke-dasharray="4 4"/>
+    <path d="M363,430 L363,468 L430,490 L462,501" class="red" stroke-width="1.6" stroke-dasharray="4 4"
+          marker-end="url(#ar)"/>
+    <text x="246" y="384" class="redtx" text-anchor="end">FROM STAIR</text>
+  </g>
+
+  <!-- ══════════════ FIRST FLOOR ══════════════ -->
+  <g transform="translate(-530,445)">
+    <rect x="640" y="190" width="310" height="240" class="room"/>
+    <rect x="640" y="190" width="310" height="240" class="ink wall"/>
+    <line x1="640" y1="300" x2="950" y2="300" class="ink part"/>
+    <line x1="730" y1="190" x2="730" y2="300" class="ink part"/>
+    <line x1="840" y1="190" x2="840" y2="300" class="ink part"/>
+    <line x1="720" y1="300" x2="720" y2="430" class="ink part"/>
+    <line x1="760" y1="300" x2="760" y2="430" class="ink part"/>
+    <line x1="800" y1="300" x2="800" y2="430" class="ink part"/>
+    <line x1="890" y1="300" x2="890" y2="430" class="ink part"/>
+
+    <text x="685" y="241" class="lbl">LUMBER</text>
+    <text x="685" y="253" class="lbl">ROOM</text>
+    <text x="785" y="241" class="lbl">SPARE</text>
+    <text x="785" y="253" class="lbl">BEDROOM</text>
+    <text x="895" y="212" class="lbl-s">W.C. &amp; PASSAGE</text>
+    <text x="895" y="223" class="lbl-s">TO BACK STAIRS</text>
+
+    <text x="680" y="355" class="lbl">MR &amp; MRS</text>
+    <text x="680" y="367" class="lbl">KENT</text>
+    <text x="680" y="384" class="occ">+ AMELIA, IN A CRIB</text>
+    <text x="740" y="358" class="lbl-s">DRESS-</text>
+    <text x="740" y="369" class="lbl-s">ING RM</text>
+    <text x="780" y="363" class="lbl-s">LAND-</text>
+    <text x="780" y="374" class="lbl-s">ING</text>
+    <text x="845" y="349" class="lbl">NIGHT-</text>
+    <text x="845" y="361" class="lbl">NURSERY</text>
+    <text x="845" y="378" class="occ">NURSE · BOY · GIRL</text>
+    <text x="920" y="352" class="lbl-s">BATH &amp;</text>
+    <text x="920" y="363" class="lbl-s">DRESSING</text>
+
+    <g class="ink thin">
+      <rect x="858" y="232" width="74" height="52"/>
+      <line x1="858" y1="241" x2="932" y2="241"/><line x1="858" y1="250" x2="932" y2="250"/>
+      <line x1="858" y1="259" x2="932" y2="259"/><line x1="858" y1="268" x2="932" y2="268"/>
+      <line x1="858" y1="277" x2="932" y2="277"/>
+    </g>
+    <g class="ink thin">
+      <rect x="766" y="312" width="28" height="54"/>
+      <line x1="766" y1="321" x2="794" y2="321"/><line x1="766" y1="330" x2="794" y2="330"/>
+      <line x1="766" y1="339" x2="794" y2="339"/><line x1="766" y1="348" x2="794" y2="348"/>
+    </g>
+
+    <!-- cots -->
+    <rect x="864" y="392" width="26" height="15" class="ink thin"/>
+    <rect x="806" y="392" width="26" height="15" class="ink thin"/>
+    <text x="819" y="418" class="occ">COT</text>
+    <text x="877" y="418" class="occ">COT</text>
+
+    <!-- the blocked door -->
+    <line x1="760" y1="312" x2="760" y2="338" stroke="#000" stroke-width="3"/>
+    <g stroke="#920805" stroke-width="1.4">
+      <line x1="755" y1="314" x2="765" y2="324"/><line x1="755" y1="322" x2="765" y2="332"/>
+      <line x1="755" y1="330" x2="765" y2="340"/>
+    </g>
+    <text x="748" y="307" class="redtx" text-anchor="end">BLOCKED</text>
+
+    <!-- windows -->
+    <line x1="820" y1="430" x2="870" y2="430" stroke="#000" stroke-width="3"/>
+    <text x="845" y="443" class="occ">TO THE LAWN</text>
+    <line x1="950" y1="340" x2="950" y2="380" stroke="#000" stroke-width="3"/>
+    <path d="M956,360 L1000,360" class="red" stroke-width="1.3" stroke-dasharray="3 3"/>
+    <text x="1004" y="356" class="redtx">OVER THE</text>
+    <text x="1004" y="367" class="redtx">DINING-ROOM ROOF</text>
+    <text x="1004" y="381" class="occ">IVY UNDISTURBED · DOG IN THE COURT</text>
+
+    <!-- route -->
+    <path d="M871,392 L871,378 L800,378 L784,366" class="red" stroke-width="1.6" stroke-dasharray="4 4"
+          marker-end="url(#ar)"/>
+    <text x="786" y="300" class="redtx" text-anchor="middle">↓ DOWN</text>
+  </g>
+
+  <!-- ══════════════ SECOND FLOOR ══════════════ -->
+  <g transform="translate(-970,780)">
+    <rect x="1080" y="190" width="310" height="240" class="room"/>
+    <rect x="1080" y="190" width="310" height="240" class="ink wall"/>
+    <line x1="1080" y1="300" x2="1390" y2="300" class="ink part"/>
+    <line x1="1170" y1="190" x2="1170" y2="300" class="ink part"/>
+    <line x1="1280" y1="190" x2="1280" y2="300" class="ink part"/>
+    <line x1="1160" y1="300" x2="1160" y2="430" class="ink part"/>
+    <line x1="1200" y1="300" x2="1200" y2="430" class="ink part"/>
+    <line x1="1240" y1="300" x2="1240" y2="430" class="ink part"/>
+
+    <text x="1125" y="241" class="lbl">WILLIAM</text>
+    <text x="1125" y="253" class="lbl">KENT</text>
+    <text x="1125" y="268" class="occ">ALONE</text>
+    <text x="1225" y="247" class="lbl-s">UNOCCUPIED</text>
+    <text x="1335" y="241" class="lbl-s">UNOCCUPIED</text>
+    <text x="1335" y="265" class="lbl-s">BACK STAIRS</text>
+
+    <text x="1120" y="355" class="lbl">MARY ANN &amp;</text>
+    <text x="1120" y="367" class="lbl">ELIZABETH</text>
+    <text x="1120" y="384" class="occ">OVER MRS KENT'S ROOM</text>
+    <text x="1220" y="363" class="lbl-s">LAND-</text>
+    <text x="1220" y="374" class="lbl-s">ING</text>
+    <text x="1315" y="355" class="lbl">COOK &amp;</text>
+    <text x="1315" y="367" class="lbl">HOUSEMAID</text>
+
+    <rect x="1162" y="302" width="36" height="126" fill="#920805" fill-opacity=".1"/>
+    <text x="1180" y="349" class="lbl" style="font-size:8.5px">CON-</text>
+    <text x="1180" y="360" class="lbl" style="font-size:8.5px">STANCE</text>
+    <text x="1180" y="376" class="occ" style="opacity:.75">ALONE</text>
+    <path d="M1180,300 L1180,286" class="red" stroke-width="1.2" stroke-dasharray="2 3"/>
+    <text x="1180" y="281" class="redtx" text-anchor="middle">OVER THE DRESSING ROOM</text>
+
+    <g class="ink thin">
+      <rect x="1206" y="312" width="28" height="54"/>
+      <line x1="1206" y1="321" x2="1234" y2="321"/><line x1="1206" y1="330" x2="1234" y2="330"/>
+      <line x1="1206" y1="339" x2="1234" y2="339"/><line x1="1206" y1="348" x2="1234" y2="348"/>
+    </g>
+    <g class="ink thin">
+      <rect x="1298" y="232" width="74" height="40"/>
+      <line x1="1298" y1="241" x2="1372" y2="241"/><line x1="1298" y1="250" x2="1372" y2="250"/>
+      <line x1="1298" y1="259" x2="1372" y2="259"/>
+    </g>
+  </g>
+
+  <!-- ══════════════ PIN KEYS ══════════════ -->
+  <g transform="translate(0,-30)">
+    <g><circle cx="255" cy="310" r="8.5" fill="#000" class="ink part"/><text x="255" y="313" class="key">F</text></g>
+    <g><circle cx="363" cy="414" r="8.5" fill="#000" class="ink part"/><text x="363" y="417" class="key">G</text></g>
+    <g><circle cx="491" cy="470" r="8.5" fill="#000" class="ink part"/><text x="491" y="473" class="key">H</text></g>
+  </g>
+  <g transform="translate(-530,445)">
+    <g><circle cx="845" cy="330" r="8.5" fill="#000" class="ink part"/><text x="845" y="333" class="key">A</text></g>
+    <g><circle cx="920" cy="330" r="8.5" fill="#000" class="ink part"/><text x="920" y="333" class="key">B</text></g>
+    <g><circle cx="680" cy="330" r="8.5" fill="#000" class="ink part"/><text x="680" y="333" class="key">C</text></g>
+    <g><circle cx="895" cy="247" r="8.5" fill="#000" class="ink part"/><text x="895" y="250" class="key">E</text></g>
+  </g>
+  <g transform="translate(-970,780)">
+    <g><circle cx="1180" cy="326" r="8.5" fill="#000" class="ink part"/><text x="1180" y="329" class="key">D</text></g>
+  </g>
+
+  <!-- ══════════════ LEGEND ══════════════ -->
+  <g transform="translate(45,1258)">
+    <line x1="0" y1="0" x2="610" y2="0" class="ink thin"/>
+    <text x="0" y="22" class="sub">KEY TO THE DOCUMENT</text>
+    <g class="legend">
+      <text x="0" y="46">A · Night-nursery, over the hall. Nurse, the boy, his sister.</text>
+      <text x="0" y="63">B · Second compartment. Window onto the dining-room roof.</text>
+      <text x="0" y="80">C · Mr and Mrs Kent, over the library, dressing room attached.</text>
+      <text x="0" y="97">D · Constance Kent, alone, directly over that dressing room.</text>
+      <text x="0" y="114">E · Back staircase past the water-closet. Servants only.</text>
+      <text x="0" y="131">F · Every door into the hall secured on the hall side.</text>
+      <text x="0" y="148">G · Drawing-room window, found open in the morning.</text>
+      <text x="0" y="165">H · The water-closet in the shrubbery. The body was here.</text>
+    </g>
+    <line x1="0" y1="185" x2="610" y2="185" class="ink thin"/>
+    <g transform="translate(0,207)">
+      <line x1="0" y1="-3" x2="24" y2="-3" class="red" stroke-width="1.6" stroke-dasharray="4 4"/>
+      <text x="34" y="0" class="legend">Route of the removal, as the prosecution put it</text>
+    </g>
+    <g transform="translate(0,229)">
+      <g stroke="#920805" stroke-width="1.4">
+        <line x1="4" y1="-10" x2="14" y2="0"/><line x1="4" y1="-5" x2="14" y2="5"/>
+      </g>
+      <text x="34" y="0" class="legend">Door fastened shut by furniture on the inside</text>
+    </g>
+    <g transform="translate(0,268)">
+      <line x1="0" y1="0" x2="206" y2="0" class="ink part"/>
+      <g class="ink thin">
+        <line x1="0" y1="-4" x2="0" y2="4"/><line x1="51.5" y1="-4" x2="51.5" y2="4"/>
+        <line x1="103" y1="-4" x2="103" y2="4"/><line x1="154.5" y1="-4" x2="154.5" y2="4"/>
+        <line x1="206" y1="-4" x2="206" y2="4"/>
+      </g>
+      <text x="0" y="18" class="occ" style="text-anchor:start">0</text>
+      <text x="103" y="18" class="occ">20</text>
+      <text x="206" y="18" class="occ">40 FEET</text>
+      <text x="610" y="4" class="legend" style="opacity:.5; text-anchor:end">Schematic: relationships follow the depositions, proportions do not.</text>
+    </g>
+  </g>
+</svg>

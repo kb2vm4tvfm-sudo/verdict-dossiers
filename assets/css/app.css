@@ -368,8 +368,12 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; margin: 0; 
 .attachment-meta { font-family: var(--mono); font-size: 10px; color: var(--dim-3); }
 
 /* scene */
+/* The dashed placeholder keeps a 4:3 box so an unillustrated file still has
+   a shape. A real plan sets its own: a three-floor plan is portrait, and
+   squeezing it into 4:3 shrinks the room labels out of legibility. */
 .scene-img { aspect-ratio: 4 / 3; }
-.scene-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.scene-img:has(img) { aspect-ratio: auto; }
+.scene-img img { width: 100%; height: auto; display: block; }
 .pinlist { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .pin {
   background: var(--bg); padding: 16px 20px;
