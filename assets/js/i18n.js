@@ -10,6 +10,7 @@
       navHow: 'How it works',
       footerNote: 'Free case dossiers · no account, no payment ·',
       disclaimer: 'Constructed cases are works of fiction. Names, characters, businesses and events are invented, the photographs are AI-generated, and any resemblance to real persons, living or dead, is coincidental.',
+      disclaimerReal: 'Real cases are reconstructed from contemporary public records — inquest and trial reports, sworn depositions and published accounts of the period. Documents are abridged for play; quoted testimony follows the published record, and where that record is disputed or silent the file says so. No images of real persons are used.',
 
       viewDesktop: 'Desktop view',
       viewMobile: 'Mobile view',
@@ -134,6 +135,7 @@
       navHow: 'Hoe werkt het',
       footerNote: 'Gratis dossiers · geen account, geen betaling ·',
       disclaimer: 'Geconstrueerde zaken zijn fictie. Namen, personages, bedrijven en gebeurtenissen zijn verzonnen, de foto\'s zijn door AI gegenereerd, en elke gelijkenis met bestaande personen, levend of overleden, berust op toeval.',
+      disclaimerReal: 'Echte zaken zijn gereconstrueerd uit openbare bronnen uit die tijd — verslagen van gerechtelijk onderzoek en rechtszittingen, beëdigde verklaringen en gepubliceerde verslagen. Stukken zijn ingekort om speelbaar te zijn; geciteerde verklaringen volgen de gepubliceerde tekst, en waar die tekst betwist is of zwijgt, vermeldt het dossier dat. Er worden geen afbeeldingen van echte personen gebruikt.',
 
       viewDesktop: 'Desktopweergave',
       viewMobile: 'Mobiele weergave',
@@ -258,6 +260,7 @@
       navHow: 'Comment ça marche',
       footerNote: 'Dossiers gratuits · pas de compte, pas de paiement ·',
       disclaimer: 'Les affaires fictives sont des œuvres de fiction. Les noms, personnages, entreprises et événements sont inventés, les photographies sont générées par IA, et toute ressemblance avec des personnes réelles, vivantes ou décédées, serait fortuite.',
+      disclaimerReal: 'Les affaires réelles sont reconstituées à partir de sources publiques d\'époque — rapports d\'enquête et de procès, dépositions sous serment et comptes rendus publiés. Les pièces sont abrégées pour le jeu ; les témoignages cités suivent le texte publié, et lorsque celui-ci est contesté ou muet, le dossier le signale. Aucune image de personnes réelles n\'est utilisée.',
       viewDesktop: 'Version bureau',
       viewMobile: 'Version mobile',
       viewDesktopAria: 'Passer à la version bureau',

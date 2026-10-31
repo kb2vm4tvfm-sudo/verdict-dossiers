@@ -158,11 +158,21 @@
 
   /* ── Chrome ───────────────────────────────────────────────────────────── */
 
+  /* The footer promise depends on what is being read. A constructed file owes
+     the reader a statement that it is fiction; a real one owes them its
+     sources instead, and must not claim invented people. Reset on every
+     render, then set again once the case is known. */
+  function paintDisclaimer(badge) {
+    var node = document.querySelector('.foot-disclaimer');
+    if (node) node.textContent = t(badge === 'real' ? 'disclaimerReal' : 'disclaimer');
+  }
+
   function paintChrome(route) {
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach(function (node) {
       node.textContent = t(node.getAttribute('data-i18n'));
     });
+    paintDisclaimer(null);
     document.querySelectorAll('[data-lang]').forEach(function (btn) {
       btn.classList.toggle('on', btn.getAttribute('data-lang') === lang);
     });
@@ -1203,7 +1213,9 @@
       if (route.name === 'index') return show(renderIndex());
       if (route.name === 'how') return show(renderHow());
 
-      if (!entryFor(route.id)) return show(renderMessage(t('notFound')));
+      var entry = entryFor(route.id);
+      if (!entry) return show(renderMessage(t('notFound')));
+      paintDisclaimer(entry.badge);
 
       show(h('div', { 'class': 'wrap' }, [h('div', { 'class': 'empty', text: t('loading') })]));
 
